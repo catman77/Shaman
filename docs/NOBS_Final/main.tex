@@ -1,0 +1,114 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{geometry}
+\usepackage{natbib}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,positioning,calc}
+\usepackage{tikz-cd}
+
+% Page layout
+\geometry{
+    a4paper,
+    left=25mm,
+    right=25mm,
+    top=25mm,
+    bottom=25mm
+}
+
+% Theorem environments
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{hypothesis}[theorem]{Hypothesis}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+
+% Custom commands
+\newcommand{\Struct}{\mathbf{Struct}}
+\newcommand{\Cost}{\mathbf{Cost}}
+% \Sigma already defined in LaTeX
+\newcommand{\Hom}{\mathrm{Hom}}
+\newcommand{\OT}{\mathbf{OT}}
+\newcommand{\NP}{\mathbf{NP}}
+\newcommand{\Pclass}{\mathbf{P}}
+\newcommand{\VC}{\mathrm{VC}}
+\newcommand{\poly}{\mathrm{poly}}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    pdftitle={Natural Observation-Based Computing},
+    pdfauthor={Sergey Kotikov}
+}
+
+% Title and authors
+\title{\textbf{Natural Observation-Based Computing:\\ 
+A Novel Paradigm for Solving Computational Problems\\ 
+Through Structural Learning}}
+
+\author{
+    Sergey Kotikov\\
+    \texttt{serg.kotikov@gmail.com}
+}
+
+\date{October 9, 2025\\\textit{Draft for Submission}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\input{sections/00_abstract}
+\end{abstract}
+
+\textbf{Keywords:} observation-based computing, structural learning, free energy minimization, traveling salesman problem, natural computation, category theory, symbolic DNA, complexity theory
+
+\newpage
+\tableofcontents
+\newpage
+
+% Main sections
+\input{sections/01_introduction}
+\input{sections/02_related_work}
+\input{sections/03_theoretical_framework}
+\input{sections/04_market_theory}
+\input{sections/05_algorithm}
+\input{sections/06_experiments}
+\input{sections/07_implications}
+\input{sections/08_discussion}
+\input{sections/09_future_work}
+\input{sections/10_conclusion}
+
+% Acknowledgments
+\section*{Acknowledgments}
+We thank the open-source community for mathematical and scientific Python libraries (NumPy, SciPy, NetworkX, Matplotlib) that made this research possible. Special thanks to the theoretical foundations provided by category theory, statistical mechanics, and complexity theory communities.
+
+% Bibliography
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+% Appendices
+\appendix
+\input{sections/appendix_a_notation}
+\input{sections/appendix_b_implementation}
+\input{sections/appendix_c_results}
+\input{sections/appendix_d_proofs}
+
+\end{document}

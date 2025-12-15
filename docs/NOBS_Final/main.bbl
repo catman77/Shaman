@@ -1,0 +1,131 @@
+\begin{thebibliography}{21}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abramsky and Coecke(2004)]{abramsky2004}
+Samson Abramsky and Bob Coecke.
+\newblock A categorical semantics of quantum protocols.
+\newblock In \emph{Proceedings of the 19th Annual IEEE Symposium on Logic in
+  Computer Science}, pages 415--425. IEEE, 2004.
+
+\bibitem[Adleman(1994)]{adleman1994}
+Leonard~M Adleman.
+\newblock Molecular computation of solutions to combinatorial problems.
+\newblock \emph{Science}, 266\penalty0 (5187):\penalty0 1021--1024, 1994.
+
+\bibitem[Christofides(1976)]{christofides1976}
+Nicos Christofides.
+\newblock Worst-case analysis of a new heuristic for the travelling salesman
+  problem.
+\newblock Technical report, Carnegie Mellon University, 1976.
+
+\bibitem[Chua(1971)]{chua1971}
+Leon Chua.
+\newblock Memristor—the missing circuit element.
+\newblock \emph{IEEE Transactions on circuit theory}, 18\penalty0 (5):\penalty0
+  507--519, 1971.
+
+\bibitem[Copeland(2002)]{copeland2002}
+B~Jack Copeland.
+\newblock Hypercomputation.
+\newblock \emph{Minds and machines}, 12\penalty0 (4):\penalty0 461--502, 2002.
+
+\bibitem[Cover and Thomas(2006)]{cover2006}
+Thomas~M Cover and Joy~A Thomas.
+\newblock \emph{Elements of information theory}.
+\newblock John Wiley \& Sons, 2nd edition, 2006.
+
+\bibitem[De~Castro and Timmis(2002)]{decastro2002}
+Leandro~Nunes De~Castro and Jonathan Timmis.
+\newblock \emph{Artificial immune systems: a new computational intelligence
+  approach}.
+\newblock Springer Science \& Business Media, 2002.
+
+\bibitem[Dorigo et~al.(1996)Dorigo, Maniezzo, and Colorni]{dorigo1996}
+Marco Dorigo, Vittorio Maniezzo, and Alberto Colorni.
+\newblock Ant system: optimization by a colony of cooperating agents.
+\newblock \emph{IEEE Transactions on Systems, Man, and Cybernetics},
+  26\penalty0 (1):\penalty0 29--41, 1996.
+
+\bibitem[Finnila et~al.(1994)Finnila, Gomez, Sebenik, Stenson, and
+  Doll]{finnila1994}
+AB~Finnila, MA~Gomez, C~Sebenik, C~Stenson, and JD~Doll.
+\newblock Quantum annealing: a new method for minimizing multidimensional
+  functions.
+\newblock \emph{Chemical Physics Letters}, 219\penalty0 (5-6):\penalty0
+  343--348, 1994.
+
+\bibitem[Friston(2010)]{friston2010}
+Karl Friston.
+\newblock The free-energy principle: a unified brain theory?
+\newblock \emph{Nature Reviews Neuroscience}, 11\penalty0 (2):\penalty0
+  127--138, 2010.
+
+\bibitem[Holland(1975)]{holland1975}
+John~H Holland.
+\newblock \emph{Adaptation in natural and artificial systems}.
+\newblock University of Michigan press, 1975.
+
+\bibitem[Hopfield and Tank(1985)]{hopfield1985}
+John~J Hopfield and David~W Tank.
+\newblock Neural computation of decisions in optimization problems.
+\newblock \emph{Biological cybernetics}, 52\penalty0 (3):\penalty0 141--152,
+  1985.
+
+\bibitem[Kennedy and Eberhart(1995)]{kennedy1995}
+James Kennedy and Russell Eberhart.
+\newblock Particle swarm optimization.
+\newblock In \emph{Proceedings of ICNN'95-International Conference on Neural
+  Networks}, volume~4, pages 1942--1948. IEEE, 1995.
+
+\bibitem[Kirkpatrick et~al.(1983)Kirkpatrick, Gelatt, and
+  Vecchi]{kirkpatrick1983}
+Scott Kirkpatrick, C~Daniel Gelatt, and Mario~P Vecchi.
+\newblock Optimization by simulated annealing.
+\newblock \emph{Science}, 220\penalty0 (4598):\penalty0 671--680, 1983.
+
+\bibitem[Kool et~al.(2019)Kool, Van~Hoof, and Welling]{kool2019}
+Wouter Kool, Herke Van~Hoof, and Max Welling.
+\newblock Attention, learn to solve routing problems!
+\newblock In \emph{International Conference on Learning Representations}, 2019.
+
+\bibitem[Kotikov(2025)]{kotikov2025}
+Sergey Kotikov.
+\newblock Symbolic representation of mathematical structures: A categorical
+  framework with application to tsp.
+\newblock \emph{arXiv preprint}, 2025.
+\newblock In preparation.
+
+\bibitem[Lind and Marcus(1995)]{lind1995}
+Douglas Lind and Brian Marcus.
+\newblock \emph{An introduction to symbolic dynamics and coding}.
+\newblock Cambridge University Press, 1995.
+
+\bibitem[P{\u{a}}un(2000)]{paun2000}
+Gheorghe P{\u{a}}un.
+\newblock Computing with membranes.
+\newblock \emph{Journal of Computer and System Sciences}, 61\penalty0
+  (1):\penalty0 108--143, 2000.
+
+\bibitem[Rozenberg et~al.(2012)Rozenberg, B{\"a}ck, and Kok]{rozenberg2012}
+Grzegorz Rozenberg, Thomas B{\"a}ck, and Joost~N Kok.
+\newblock \emph{Handbook of natural computing}.
+\newblock Springer, 2012.
+
+\bibitem[Vapnik and Chervonenkis(1971)]{vapnik1971}
+Vladimir~N Vapnik and Alexey~Ya Chervonenkis.
+\newblock On the uniform convergence of relative frequencies of events to their
+  probabilities.
+\newblock \emph{Theory of Probability \& Its Applications}, 16\penalty0
+  (2):\penalty0 264--280, 1971.
+
+\bibitem[Vinyals et~al.(2015)Vinyals, Fortunato, and Jaitly]{vinyals2015}
+Oriol Vinyals, Meire Fortunato, and Navdeep Jaitly.
+\newblock Pointer networks.
+\newblock In \emph{Advances in Neural Information Processing Systems}, pages
+  2692--2700, 2015.
+
+\end{thebibliography}

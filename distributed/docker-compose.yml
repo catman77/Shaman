@@ -1,0 +1,85 @@
+# Distributed Shaman Experiment - Docker Compose
+# 
+# ВАЖНО: Серверы НЕ обмениваются данными!
+# Они только используют одинаковое название смысла (meaning_name)
+
+version: '3.8'
+
+services:
+  # Server A - Learner (обучается распознавать смысл)
+  server_a:
+    build:
+      context: ./server_a
+      dockerfile: Dockerfile
+    container_name: shaman-server-a
+    volumes:
+      # Mount data directory (read-only)
+      - ./data:/data:ro
+      # Mount output for local model (NOT shared with server_b!)
+      - ./output_a:/output
+    environment:
+      # Название смысла - единственное что "передаётся"
+      # (на самом деле оба сервера читают из одного конфига)
+      - MEANING_NAME=bullish_trend
+      - DATA_PORTION_START=0.0
+      - DATA_PORTION_END=0.5
+    command: >
+      python server.py
+      --meaning bullish_trend
+      --data /data/BTC_USDT_USDT-4h-futures.feather
+      --output /output
+      --portion-start 0.0
+      --portion-end 0.5
+    networks:
+      - shaman-net
+
+  # Server B - Shaman (ищет смысл в своих данных)
+  server_b:
+    build:
+      context: ./server_b
+      dockerfile: Dockerfile
+    container_name: shaman-server-b
+    volumes:
+      # Mount data directory (read-only)
+      - ./data:/data:ro
+      # Mount output for reports
+      - ./output_b:/output
+    environment:
+      # ТОТ ЖЕ смысл - но сервер B не получает его от A!
+      # Оба читают из shared/meanings.py
+      - MEANING_NAME=bullish_trend
+      - DATA_PORTION_START=0.5
+      - DATA_PORTION_END=1.0
+    command: >
+      python server.py
+      --meaning bullish_trend
+      --data /data/BTC_USDT_USDT-4h-futures.feather
+      --output /output
+      --portion-start 0.5
+      --portion-end 1.0
+    # НЕ зависит от server_a - они полностью независимы!
+    networks:
+      - shaman-net
+
+networks:
+  shaman-net:
+    driver: bridge
+
+# Usage:
+# 1. Prepare data:
+#    mkdir -p distributed/data distributed/output_a distributed/output_b
+#    cp data/BTC_USDT_USDT-4h-futures.feather distributed/data/
+#
+# 2. Build images:
+#    docker-compose build
+#
+# 3. Run servers INDEPENDENTLY (no data exchange!):
+#    docker-compose run server_a
+#    docker-compose run server_b
+#
+# 4. Compare results in output_a/ and output_b/
+#
+# To test with different meanings, change MEANING_NAME in both services
+# Available meanings: bullish_trend, bearish_trend, high_volatility,
+#                     low_volatility, accumulation, distribution,
+#                     breakout, reversal, trend_exhaustion, momentum_shift

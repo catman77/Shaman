@@ -1,0 +1,259 @@
+\section{Theoretical Framework}
+
+\subsection{Symbolic DNA: Structural Encoding of Computation}
+
+\begin{definition}[Symbolic DNA]
+A symbolic DNA is a finite string $\sigma \in \Sigma^*$ over structural alphabet $\Sigma = \{S, P, I, Z, \Omega, \Lambda\}$ that encodes the relational structure of a computational object.
+\end{definition}
+
+\paragraph{Adaptive Alphabet Selection:} The alphabet $\Sigma$ is not fixed but chosen based on problem structure. For market data, we use encoder functions that map OHLCV (Open, High, Low, Close, Volume) patterns to symbols representing structural changes: growth (S), decline (P), neutral (I), pause (Z), extremum ($\Omega$), and phase transitions ($\Lambda$). The specific mapping is determined by statistical properties of the input data (volatility, volume patterns, etc.), related to symbolic dynamics \cite{lind1995} and information theory \cite{cover2006}.
+
+
+\paragraph{Encoding Functor:} Any computational problem instance can be encoded via functor:
+\begin{equation}
+T_{\text{data}}: \mathcal{D} \to \Sigma^*
+\end{equation}
+where $\mathcal{D}$ is the domain of observable data. For TSP:
+\begin{itemize}
+    \item Distance matrix $\to$ symbolic relation string
+    \item Edge weights $\to$ morphism types ($S$ for long edges, $P$ for short edges, $I$ for neutral, etc.)
+\end{itemize}
+
+\paragraph{Properties:}
+\begin{enumerate}
+    \item \textbf{Structure-preserving:} $T_{\text{data}}$ respects relational properties (symmetries, orderings)
+    \item \textbf{Deterministic:} Given data, encoding is unique after normalization
+    \item \textbf{Lossy compression:} Encodes structure, not exact values
+    \item \textbf{Reversible:} Can decode approximate solution from symbolic representation
+\end{enumerate}
+
+\subsection{Self-Computing Functorial Objects}
+
+\begin{definition}[Self-Computing Functor]
+A self-computing functor is a morphism:
+\begin{equation}
+F: \Sigma^* \to \Sigma^*
+\end{equation}
+such that $F(\sigma)$ transforms symbolic DNA $\sigma$ into a new structure, and $F$ is learnable from finite observations.
+\end{definition}
+
+\paragraph{Depth of Self-Computation $d(F)$:}
+\begin{itemize}
+    \item $d=0$: System computes outputs only (classical algorithm)
+    \item $d=1$: System maintains feedback loops (adaptive systems)
+    \item $d=2$: System modifies its own transformation rules (meta-learning)
+    \item $d=3$: System models the observer (self-reflective computation)
+    \item $d\to\infty$: Infinite fractal self-reflection
+\end{itemize}
+
+\begin{proposition}
+The depth $d(F)$ determines computational complexity:
+\begin{itemize}
+    \item $d\leq 1$ $\Rightarrow$ $\Pclass$ (deterministic polynomial time)
+    \item $1<d\leq 3$ $\Rightarrow$ $\OT$ (observation time, intermediate class)
+    \item $d>3$ $\Rightarrow$ Undecidable or intractable
+\end{itemize}
+\end{proposition}
+
+\subsection{Category-Theoretic Foundations}
+
+\begin{definition}[Structure Category]
+Let $\Struct$ be the category where:
+\begin{itemize}
+    \item \textbf{Objects:} Symbolic DNA strings $\sigma \in \Sigma^*$
+    \item \textbf{Morphisms:} Structure-preserving transformations
+    \item \textbf{Composition:} Sequential application of morphisms
+\end{itemize}
+\end{definition}
+
+This categorical approach follows \cite{abramsky2004}, applying categorical semantics to computational structures.
+
+\begin{definition}[Observation Functor]
+The observation functor:
+\begin{equation}
+\text{Obs}: \Struct \to \Cost
+\end{equation}
+maps structural configurations to their observable quality (cost function).
+\end{definition}
+
+\begin{theorem}[Morphism Learning]\label{thm:morphism_learning}
+Given:
+\begin{enumerate}
+    \item Evaluation oracle $O: S \to \mathbb{R}$ (polynomial time)
+    \item Sampleable state space (polynomial sampling)
+    \item Learnable structure (bounded VC dimension \cite{vapnik1971})
+\end{enumerate}
+There exists a learning algorithm $\mathcal{L}$ that, with high probability, identifies a morphism $\varphi: \Struct \to \Struct$ such that:
+\begin{equation}
+\text{Obs}(\varphi(\sigma_0)) \leq (1+\varepsilon)\cdot\text{OPT}
+\end{equation}
+in polynomial observation time $\poly(n, 1/\varepsilon)$.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+\begin{enumerate}
+    \item Sample $M = \poly(n, 1/\varepsilon)$ random configurations
+    \item For each sample $s_i$, observe cost $O(s_i)$
+    \item Learn statistical model of structural patterns via softmax encoding
+    \item Morphism $\varphi$ emerges as composition of learned transformations
+    \item Free energy minimization \cite{friston2010} guarantees convergence to $(1+\varepsilon)$-optimal region
+\end{enumerate}
+\end{proof}
+
+\subsection{Complexity Class $\OT$ (Observation Time)}
+
+\begin{definition}[OT Complexity Class]
+A decision problem $L \in \OT$ if there exists:
+\begin{enumerate}
+    \item Polynomial-time oracle $O(s)$ for evaluating candidate solutions
+    \item Polynomial-time sampling procedure $\text{Gen}(n)$ for generating candidates
+    \item Structural learning algorithm $\mathcal{L}$ with sample complexity $\poly(n)$
+    \item Morphism $\varphi$ learned by $\mathcal{L}$ such that solutions are found in $\poly(n)$ observations
+\end{enumerate}
+\end{definition}
+
+\begin{conjecture}[OT Hierarchy]\label{conj:ot_hierarchy}
+\begin{equation}
+\Pclass \subseteq \OT \subseteq \NP
+\end{equation}
+\end{conjecture}
+
+\paragraph{Evidence:}
+\begin{itemize}
+    \item TSP empirical results: 68\% of instances solvable optimally via observation (suggest large $\OT \cap \NP$)
+    \item $\Pclass \subseteq \OT$: Any polynomial-time algorithm can be simulated by observation
+    \item $\OT \subseteq \NP$: Verification is polynomial (standard NP property)
+\end{itemize}
+
+\paragraph{Open Question:} Is $\OT = \NP$? Or does there exist $\NP \setminus \OT$ (problems with no learnable structure)?
+
+\subsection{Predictability Hierarchy and Phase Transitions}
+
+\begin{definition}[Structural Predictability]
+For system with functor $F$ of depth $d(F)$, define predictability:
+\begin{equation}
+\Psi(d) = \frac{|\Hom_{\text{obs}}(\Sigma^*, \Sigma^*)|}{|\Hom_{\text{alg}}(\Sigma^*, \Sigma^*)|}
+\end{equation}
+ratio of observed morphisms to all possible morphisms.
+\end{definition}
+
+\paragraph{Phase Classification:}
+\begin{itemize}
+    \item \textbf{Phase A} ($d\approx 0$): $\Psi\approx 1$, fully deterministic (class $\Pclass$ problems)
+    \item \textbf{Phase B} ($d\approx 1$): $0.7<\Psi<1$, quasi-deterministic (simple greedy works)
+    \item \textbf{Phase C} ($d\approx 2$): $0.3<\Psi<0.7$, emergent adaptivity (metaheuristics effective)
+    \item \textbf{Phase D} ($d\approx 2.5$--$3$): Critical self-modification (NOBC optimal zone)
+    \item \textbf{Phase E} ($d>3$): $\Psi\to 0$, fractal unpredictability (intractable)
+\end{itemize}
+
+\begin{hypothesis}\label{hyp:nobc_optimal}
+Natural Observation-Based Computing is most effective in Phase D (critical zone) where:
+\begin{enumerate}
+    \item Structure is rich enough to learn from
+    \item But not so deep as to be intractable
+    \item Traditional algorithms fail due to complexity
+    \item But observation reveals hidden patterns
+\end{enumerate}
+\end{hypothesis}
+
+\subsection{Computational Depth: Unified Framework}
+
+The concept of \textbf{self-computing depth} $d(F)$ is central to our framework and appears throughout this work in various contexts. This section consolidates all depth-related concepts into a unified treatment, connecting depth to complexity classes, predictability, and algorithm selection.
+
+\subsubsection{Depth and Complexity}
+
+The depth $d(F)$ directly determines computational tractability:
+\begin{itemize}
+    \item $d \leq 1 \Rightarrow F \in \Pclass$ (polynomial time, fixed transition rules)
+    \item $1 < d \leq 3 \Rightarrow F \in \OT$ (observation time, learnable structure)
+    \item $d > 3 \Rightarrow F$ intractable (super-polynomial or hyper-Turing)
+\end{itemize}
+
+\subsubsection{Empirical Depth Estimates}
+
+From our experiments:
+\begin{itemize}
+    \item \textbf{TSP instances:} $d \approx 2.5$--$3.0$ (68\% optimal solutions via observation)
+    \item \textbf{Financial markets:} $d_{\text{mkt}} \approx 3$--$4$ (46.8\% forward accuracy, Phase D)
+    \item \textbf{Pathological graphs:} $d \geq 4$ (require pure free energy minimization)
+\end{itemize}
+
+\subsubsection{Depth-Based Strategy Selection}
+
+In our TSP implementation, we estimate depth via graph chaos metric:
+\begin{equation}
+\text{chaos} = \frac{\sigma(D)}{\mu(D)}
+\end{equation}
+where $\sigma(D)$ = standard deviation, $\mu(D)$ = mean of distances.
+
+\paragraph{Strategy Selection Rules:}
+\begin{itemize}
+    \item chaos $< 0.3 \Rightarrow d \approx 2 \Rightarrow$ use Hybrid (structured graphs)
+    \item chaos $> 0.5 \Rightarrow d \approx 4 \Rightarrow$ use FreeEnergy (deceptive landscapes)
+    \item Otherwise $\Rightarrow d \approx 3 \Rightarrow$ auto-select (Smart strategy)
+\end{itemize}
+
+This automatic adaptation explains the robustness of our method across diverse graph types, achieving consistent performance regardless of structure.
+
+\paragraph{Connection to TSP:} Our empirical results suggest TSP lies in Phase D:
+\begin{itemize}
+    \item Classical algorithms fail on pathological instances (high $d$)
+    \item But 68\% of instances have learnable structure (bounded $d$)
+    \item Natural observation succeeds where traditional methods fail
+\end{itemize}
+
+\subsubsection{Five-Dimensional Structure and Tractability Limit}
+
+\paragraph{Topological Evidence:} Extended experiments (detailed in Section~6.6) reveal that \textbf{five dimensions represent the maximum achievable topological complexity} before structural collapse. Using high-resolution financial data (2.86M observations) across depths $d=1$ to $d=8$:
+
+\begin{itemize}
+    \item \textbf{Growth phase ($d=1$--$5$):} $\beta_1$ increases 100$\times$ (31 $\to$ 3,104 cycles)
+    \item \textbf{Peak at $d=5$:} Maximum topological complexity (p $<$ 0.01 vs prior depths)
+    \item \textbf{Collapse phase ($d>5$):} $\beta_1$ drops 60\% while fragmentation explodes 8$\times$
+\end{itemize}
+
+\paragraph{Interpretation:} The 5th dimension corresponds to \textbf{self-computational depth}: the system's capacity to iteratively reference and transform its own structure through functor composition $F^5 = F \circ F \circ F \circ F \circ F$. Beyond this point, the system cannot sustain coherent global structure.
+
+\paragraph{Mathematical Mechanism:}
+
+The collapse arises from the \textbf{observational capacity bound}. For a system with $N$ observations and alphabet size $\sigma$:
+\begin{equation}
+d_{\max} \approx \frac{\ln(N)}{\ln(\sigma)}
+\end{equation}
+
+When $d > d_{\max}$, state space $\sigma^d$ exceeds $N$, causing:
+\begin{enumerate}
+    \item \textbf{Sparsification:} Coverage ratio $N/\sigma^d < 1$ (insufficient sampling)
+    \item \textbf{Fragmentation:} Morphism graph splits into isolated components
+    \item \textbf{Cycle dissolution:} Disconnected graphs cannot form global cycles ($\beta_1 \downarrow$)
+\end{enumerate}
+
+For Bitcoin: $d_{\max} \approx \ln(50{,}000)/\ln(6) \approx 6$. Empirical peak at $d=5$ confirms this bound.
+
+\paragraph{Three Phases of Dimensional Complexity:}
+
+\begin{enumerate}
+    \item \textbf{$d \leq 4$:} Structured growth phase --- exponential increase in topological features, coherent structure
+    \item \textbf{$d = 5$:} Critical peak --- maximum complexity before observational limits dominate
+    \item \textbf{$d > 5$:} Collapse phase --- fragmentation, structural breakdown, intractable state space
+\end{enumerate}
+
+\paragraph{Practical Significance:} The five-dimensional limit explains our method's empirical behavior:
+\begin{itemize}
+    \item \textbf{TSP success ($d \approx 3$):} Well within structured phase, optimal performance
+    \item \textbf{Market prediction ($d \approx 4$):} Near peak, partial success with Phase D methods
+    \item \textbf{Arbitrary problems ($d > 5$):} Beyond collapse threshold, observation-based methods fail
+\end{itemize}
+
+\paragraph{Universal Bound:} This is not specific to Bitcoin or finance --- it follows from fundamental mathematics of sparse graphs. \textbf{Any system with finite observations $N$ will exhibit $d_{\max} \approx \log_\sigma(N)$}, representing a universal limit to self-computational depth in natural systems.
+
+\paragraph{Categorical Interpretation:} 
+
+For category theory, this means:
+\begin{itemize}
+    \item Coherent categorical structure exists for $d \leq 5$
+    \item Beyond $d=5$, categories fragment into pre-sheaves (local, disconnected)
+    \item Five dimensions are the \textbf{frontier of global compositional structure}
+\end{itemize}
+
+The limit is not an artifact of our method but a \textbf{fundamental property of self-referential computational systems} operating under observational constraints.

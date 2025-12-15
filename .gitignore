@@ -1,0 +1,8 @@
+venv/
+distributed/experiment_results/
+advanced/experiment_results/
+advanced/experiment_results_v2/
+advanced/tmp_training/
+docs/NOBS_Final/NOBS/
+
+

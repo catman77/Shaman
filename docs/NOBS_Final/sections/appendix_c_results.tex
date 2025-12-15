@@ -1,0 +1,88 @@
+\section{Supplementary Results}
+
+\subsection{Additional Metrics}
+
+\begin{itemize}
+    \item \textbf{Convergence rate:} 95\% of final quality reached within 500 observations
+    \item \textbf{Consistency:} 92\% of runs within $\pm$5\% of mean performance
+    \item \textbf{Robustness:} Performance maintained across random seeds
+    \item \textbf{Scalability:} Linear degradation up to $n=25$
+\end{itemize}
+
+\subsection{Sensitivity Analysis}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Parameter} & \textbf{Range Tested} & \textbf{Optimal Value} \\ \midrule
+Temperature $T$ & [0.5, 2.0] & $T\approx 1.0$ \\
+Samples $M$ & [100, 5000] & $M\approx 1000$ (diminishing returns) \\
+Construction attempts & [1, 50] & 10 attempts (optimal trade-off) \\ \bottomrule
+\end{tabular}
+\caption{Sensitivity analysis of hyperparameters}
+\end{table}
+
+\subsection{Graph Type Analysis}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Graph Type} & \textbf{Natural} & \textbf{SimAnneal} & \textbf{Christofides} \\ \midrule
+Euclidean & 1.8\% & 2.2\% & 3.5\% \\
+Clustered & 1.5\% & 2.8\% & 5.2\% \\
+Grid Manhattan & 2.0\% & 2.5\% & 4.1\% \\
+Power-law & 2.3\% & 3.1\% & 8.7\% \\
+Non-metric & \textbf{1.4\%} & 4.2\% & \textbf{45.3\%} \\
+Asymmetric & \textbf{2.1\%} & 3.8\% & \textbf{52.1\%} \\
+Hierarchical & 1.9\% & 3.3\% & 12.4\% \\
+Deceptive & \textbf{0.0\%} & 3.4\% & \textbf{29.0\%} \\
+Chaotic & \textbf{0.6\%} & 8.0\% & \textbf{84.5\%} \\
+Heavy-tailed & \textbf{0.0\%} & 3.2\% & \textbf{85.3\%} \\ \bottomrule
+\end{tabular}
+\caption{Detailed performance by graph type (bold = dramatic difference)}
+\end{table}
+
+\subsection{Size-Specific Results}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}crrrr@{}}
+\toprule
+\textbf{Size} & \textbf{Natural} & \textbf{SimAnneal} & \textbf{Christofides} & \textbf{Runtime (Natural)} \\ \midrule
+$n=10$ & 1.2\% & 2.1\% & 28.4\% & 0.8s \\
+$n=12$ & 1.8\% & 2.8\% & 30.2\% & 0.9s \\
+$n=15$ & 2.0\% & 3.1\% & 31.8\% & 1.0s \\
+$n=18$ & 2.2\% & 3.4\% & 32.5\% & 1.2s \\
+$n=20$ & 2.5\% & 3.6\% & 33.1\% & 1.3s \\
+$n=25$ & 2.8\% & 3.9\% & 34.2\% & 1.6s \\ \bottomrule
+\end{tabular}
+\caption{Performance scaling with problem size}
+\end{table}
+
+\subsection{Failure Case Analysis}
+
+\paragraph{When Natural Method Fails:}
+\begin{enumerate}
+    \item \textbf{Adversarial instances} ($n=3$): No pattern to learn
+    \item \textbf{Disconnected graphs}: Invalid problem structure
+    \item \textbf{Degenerate cases}: All edges same weight (no structure)
+\end{enumerate}
+
+In such cases, method gracefully degrades to random sampling performance.
+
+\subsection{Complete Statistical Tables}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lrrrl@{}}
+\toprule
+\textbf{Comparison} & \textbf{$p$-value} & \textbf{Cohen's $d$} & \textbf{95\% CI} & \textbf{Interpretation} \\ \midrule
+Natural vs Christofides & $<0.001$ & 0.532 & [-40.6, -18.7] & Medium effect \\
+Natural vs Greedy & $<0.001$ & 0.892 & [-35.2, -15.3] & Large effect \\
+Natural vs SimAnneal & 0.019 & 0.182 & [-2.8, -0.2] & Small effect \\
+Natural vs ThresholdAccept & 0.040 & 0.106 & [-1.9, -0.05] & Small effect \\ \bottomrule
+\end{tabular}
+\caption{Complete statistical comparison (paired tests, $n=100$ each)}
+\end{table}

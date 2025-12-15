@@ -1,0 +1,99 @@
+\section{Implementation Details}
+
+\subsection{Code Repository}
+
+\begin{itemize}
+    \item \textbf{Repository:} \url{https://github.com/catman77/NOBS}
+    \item \textbf{License:} MIT
+    \item \textbf{Language:} Python 3.10+
+\end{itemize}
+
+\subsection{Key Files}
+
+\begin{description}
+    \item[\texttt{natural\_tsp\_production.py}] Main solver implementation
+    \item[\texttt{comprehensive\_benchmark.py}] 300-test benchmark suite
+    \item[\texttt{statistical\_significance\_tests.py}] Statistical validation
+    \item[\texttt{analyze\_benchmark\_results.py}] Results analysis and visualization
+\end{description}
+
+\subsection{Dependencies}
+
+\begin{verbatim}
+Python >= 3.10
+numpy >= 1.24.0
+scipy >= 1.10.0
+networkx >= 3.0
+matplotlib >= 3.6.0
+pandas >= 1.5.0
+seaborn >= 0.12.0
+\end{verbatim}
+
+\subsection{Installation}
+
+\begin{verbatim}
+# Clone repository
+git clone https://github.com/catman77/TSP
+cd TSP
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Verify installation
+python -m pytest tests/
+\end{verbatim}
+
+\subsection{Running Experiments}
+
+\begin{verbatim}
+# Run comprehensive benchmark (300 tests, ~2-3 hours)
+python comprehensive_benchmark.py
+
+# Analyze results
+python analyze_benchmark_results.py
+
+# Statistical validation
+python statistical_significance_tests.py
+
+# Quick test on single instance
+python -c "from natural_tsp_production import *;
+           solve_single_instance(size=15, graph_type='euclidean')"
+\end{verbatim}
+
+\subsection{API Usage}
+
+\begin{verbatim}
+from natural_tsp_production import NaturalTSPSolver
+import numpy as np
+
+# Create random distance matrix
+n = 20
+distances = np.random.rand(n, n)
+distances = (distances + distances.T) / 2  # Make symmetric
+np.fill_diagonal(distances, 0)
+
+# Solve
+solver = NaturalTSPSolver(strategy='smart')
+tour, cost = solver.solve(distances)
+
+print(f"Tour: {tour}")
+print(f"Cost: {cost:.4f}")
+\end{verbatim}
+
+\subsection{Reproducibility}
+
+All experiments use fixed random seed:
+\begin{verbatim}
+np.random.seed(42)
+random.seed(42)
+\end{verbatim}
+
+Results can be exactly reproduced by running scripts with same seed.
+
+\subsection{Hardware Requirements}
+
+\begin{itemize}
+    \item \textbf{Minimum:} 4 GB RAM, 2 CPU cores
+    \item \textbf{Recommended:} 16 GB RAM, 8 CPU cores
+    \item \textbf{Runtime:} $\sim$1--2 seconds per instance on modern CPU
+\end{itemize}

@@ -1,0 +1,96 @@
+\section{Discussion}
+
+\subsection{Why Does Natural Observation Work?}
+
+\paragraph{Structural Learning Hypothesis:}
+Good solutions have \textbf{structural properties} that distinguish them from poor solutions:
+\begin{itemize}
+    \item Short tours tend to avoid edge crossings (structural invariant)
+    \item Optimal paths respect local density patterns (morphism preservation)
+    \item Quality is encoded in symbolic DNA, not just numerical cost
+\end{itemize}
+
+By observing many random solutions, we learn these structural patterns without explicitly encoding them as rules.
+
+\paragraph{Free Energy Principle:}
+Natural systems minimize free energy $F = E - T\cdot S$:
+\begin{itemize}
+    \item \textbf{Energy $E$}: Expected cost (exploitation)
+    \item \textbf{Entropy $S$}: Structural diversity (exploration)
+    \item \textbf{Temperature $T$}: Balance parameter
+\end{itemize}
+
+This automatically balances between following learned patterns (low energy) and exploring new possibilities (high entropy).
+
+\subsection{Advantages Over Traditional Approaches}
+
+\paragraph{vs. Exact Algorithms (Held-Karp):}
+\begin{itemize}
+    \item[+] Polynomial time vs exponential
+    \item[+] Practical for $n\leq 25$ vs $n\leq 20$
+    \item[-] Near-optimal vs guaranteed optimal
+    \item[+] 68\% optimal anyway on practical instances
+\end{itemize}
+
+\paragraph{vs. Approximation Algorithms (Christofides):}
+\begin{itemize}
+    \item[+] Works on non-metric (1.4\% vs 85\% deviation)
+    \item[+] No triangle inequality needed
+    \item[+] Robust to pathological cases
+    \item[-] Slower (1.2s vs 0.005s)
+    \item[-] No theoretical guarantee vs 1.5-approximation
+\end{itemize}
+
+\paragraph{vs. Metaheuristics (SimAnneal):}
+\begin{itemize}
+    \item[+] More accurate (2.1\% vs 3.2\% deviation)
+    \item[+] Higher optimal rate (68\% vs 58\%)
+    \item[+] No hyperparameter tuning
+    \item[-] Slightly slower (1.2s vs 0.19s)
+\end{itemize}
+
+\subsection{Limitations and Failure Modes}
+
+\paragraph{When NOBC Works Well:}
+\begin{itemize}
+    \item[+] Polynomial-time evaluation oracle exists
+    \item[+] State space has learnable structure
+    \item[+] Sample complexity is reasonable
+    \item[+] Time budget allows $\sim$1--2 seconds
+\end{itemize}
+
+\paragraph{When NOBC Struggles:}
+\begin{itemize}
+    \item[-] \textbf{No oracle}: Evaluation itself intractable
+    \item[-] \textbf{No structure}: Pure random problem (no patterns)
+    \item[-] \textbf{Adversarial}: Cryptographically hard instances
+    \item[-] \textbf{Real-time required}: Need $<$10ms (use fast heuristics)
+\end{itemize}
+
+\subsection{Practical Considerations}
+
+\paragraph{When to Use Natural Method:}
+
+\textbf{USE when:}
+\begin{itemize}
+    \item Accuracy critical (near-optimal required)
+    \item Graph non-metric or asymmetric
+    \item Time budget $\sim$1--2 seconds acceptable
+    \item Classical algorithms fail (pathological cases)
+    \item Algorithm unknown (exploratory problem)
+\end{itemize}
+
+\textbf{CONSIDER alternatives when:}
+\begin{itemize}
+    \item Real-time required ($<$10ms) $\to$ Use Greedy
+    \item Graph is metric Euclidean $\to$ Christofides may suffice
+    \item 58\% optimal acceptable $\to$ SimAnneal faster
+\end{itemize}
+
+\textbf{DON'T USE when:}
+\begin{itemize}
+    \item No evaluation oracle available
+    \item Problem has no structure (adversarial)
+    \item Need formal approximation guarantee
+    \item Time budget $<$1 second
+\end{itemize}

@@ -1,0 +1,114 @@
+# Shaman MVP Configuration
+# Эксперимент по резонансному переносу смысловых инвариантов
+
+experiment:
+  name: "shaman_mvp"
+  seed: 42
+  device: "cuda"  # или "cpu"
+  log_dir: "logs"
+  checkpoint_dir: "checkpoints"
+
+# Модели (минимальные для RTX 3060Ti)
+models:
+  base_llm: "distilgpt2"  # ~82M параметров
+  encoder: "all-MiniLM-L6-v2"  # sentence-transformer для латентов
+  max_length: 256
+  
+# Агент A (источник) - формирует s_A
+agent_a:
+  personality_prompt: |
+    Ты - аналитический помощник. Твой стиль:
+    - Всегда начинай ответ с "Анализируя ситуацию..."
+    - Используй numbered lists для структурирования
+    - Заканчивай выводом "Резюме: ..."
+    - Предпочитай логические аргументы эмоциональным
+  temperature: 0.7
+  num_calibration_samples: 50
+
+# Агент B (целевой) - изначально другой стиль
+agent_b:
+  personality_prompt: |
+    Ты - творческий помощник. Твой стиль:
+    - Используй метафоры и образные сравнения
+    - Ответы могут быть свободной формы
+    - Предпочитай интуитивные объяснения
+  temperature: 0.8
+  num_calibration_samples: 50
+
+# Шаман B_ш - модуль резонансного поиска
+shaman:
+  # Reward weights для J = w_E*E + w_rho*rho + w_cycle*cycle
+  w_energy: -1.0      # минимизируем энергию
+  w_rho: 2.0          # максимизируем самоинвариантность
+  w_cycle: 1.0        # максимизируем цикличность
+  w_rarity: 0.5       # поощряем нетривиальные паттерны
+  
+  # Параметры обучения policy
+  learning_rate: 1e-4
+  batch_size: 8
+  num_iterations: 100
+  
+  # Параметры блуждания по S
+  num_augmentations: 5  # для оценки rho
+  exploration_noise: 0.3
+
+# Метрики и TDA
+metrics:
+  # Энергия понимания E_B
+  length_penalty: 0.01
+  velocity_penalty: 1.0
+  entropy_penalty: 0.1
+  
+  # TDA параметры
+  tda_max_dimension: 1  # только β₁
+  tda_max_edge_length: 2.0
+  tda_top_k_cycles: 5
+
+# SymExtractor (rule-based для MVP)
+sym_extractor:
+  type: "rule_based"
+  patterns:
+    - name: "ANALYSIS_START"
+      regex: "(?i)(анализ|рассмотр|исследу)"
+    - name: "ENUMERATION"
+      regex: "\\d+[.)]\\s"
+    - name: "CONCLUSION"
+      regex: "(?i)(вывод|резюме|итог|следовательно)"
+    - name: "METAPHOR"
+      regex: "(?i)(как|подобно|словно)\\s+\\w+"
+    - name: "QUESTION"
+      regex: "\\?"
+
+# Задачи X для эксперимента
+tasks:
+  type: "qa_style"  # текстовые QA с разным стилем ответов
+  num_tasks: 100
+  templates:
+    - "Объясни концепцию: {topic}"
+    - "Как работает {topic}?"
+    - "Опиши {topic} простыми словами"
+    - "Что такое {topic}?"
+  topics:
+    - "рекурсия в программировании"
+    - "фотосинтез"
+    - "гравитация"
+    - "машинное обучение"
+    - "эволюция"
+    - "квантовая механика"
+    - "нейронные сети"
+    - "экосистема"
+
+# Протокол эксперимента
+protocol:
+  # Фаза 1: калибровка агентов (до изоляции)
+  phase1_calibration_steps: 50
+  
+  # Фаза 2: изоляция и работа шамана
+  phase2_shaman_iterations: 100
+  
+  # Фаза 3: тестирование переноса
+  phase3_test_samples: 30
+  
+  # Статистика
+  num_experiment_runs: 5  # повторы для статистической значимости
+  confidence_level: 0.95

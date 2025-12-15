@@ -1,0 +1,88 @@
+\section{Related Work}
+
+\subsection{Classical Approaches to TSP}
+
+\paragraph{Exact Algorithms:}
+\begin{itemize}
+    \item Held-Karp dynamic programming: $O(2^n n^2)$ time, optimal but exponential
+    \item Branch-and-bound with cutting planes: practical for $n\leq 1000$ but still exponential worst-case
+\end{itemize}
+
+\paragraph{Approximation Algorithms:}
+\begin{itemize}
+    \item Christofides (1976) \cite{christofides1976}: 1.5-approximation for metric TSP, polynomial time
+    \item Lin-Kernighan heuristics: no theoretical guarantees but good empirical performance
+\end{itemize}
+
+\paragraph{Limitations:} Classical algorithms either:
+\begin{enumerate}
+    \item Guarantee optimality but require exponential time (intractable for $n>30$)
+    \item Run in polynomial time but fail on non-metric/pathological instances
+\end{enumerate}
+
+\subsection{Metaheuristics and Learning Approaches}
+
+\paragraph{Stochastic Optimization:}
+\begin{itemize}
+    \item Simulated Annealing \cite{kirkpatrick1983}
+    \item Genetic Algorithms \cite{holland1975}
+    \item Ant Colony Optimization \cite{dorigo1996}
+\end{itemize}
+
+\paragraph{Neural Approaches:}
+\begin{itemize}
+    \item Hopfield networks for TSP \cite{hopfield1985}
+    \item Attention mechanisms \cite{vinyals2015}
+    \item Graph neural networks \cite{kool2019}
+\end{itemize}
+
+\paragraph{Limitations:} These approaches:
+\begin{enumerate}
+    \item Require extensive hyperparameter tuning
+    \item Lack theoretical foundations for convergence
+    \item Often fail on pathological instances
+    \item Don't provide structural explanations
+\end{enumerate}
+
+\subsection{Natural Computation}
+
+\paragraph{Physical Computing:}
+\begin{itemize}
+    \item Quantum annealing \cite{finnila1994}
+    \item Analog computing \cite{chua1971}
+    \item DNA computing \cite{adleman1994}
+\end{itemize}
+
+\paragraph{Bio-inspired Computing:}
+\begin{itemize}
+    \item Swarm intelligence \cite{kennedy1995}
+    \item Artificial immune systems \cite{decastro2002}
+    \item Membrane computing \cite{paun2000}
+\end{itemize}
+
+\paragraph{Theoretical Foundations:}
+\begin{itemize}
+    \item Hypercomputation \cite{copeland2002}
+    \item Natural computing \cite{rozenberg2012}
+    \item Category-theoretic computation \cite{abramsky2004}
+\end{itemize}
+
+\paragraph{Gap:} While these approaches are ``inspired by nature,'' they still operate within the classical computational model. Our work goes further: we model computation itself as a natural process of structural observation and learning, grounded in category theory and symbolic representations.
+
+\subsection{Complexity Theory}
+
+\paragraph{Complexity Classes:}
+\begin{itemize}
+    \item $\Pclass$: polynomial time deterministic
+    \item $\NP$: polynomial time nondeterministic
+    \item $\mathbf{APX}$: approximable within constant factor
+\end{itemize}
+
+\paragraph{Open Questions:}
+\begin{itemize}
+    \item $\Pclass$ vs $\NP$ problem (Millennium Prize)
+    \item Exact complexity of TSP
+    \item Existence of intermediate classes between $\Pclass$ and $\NP$
+\end{itemize}
+
+\paragraph{Our Contribution:} We propose $\OT$ (Observation Time) as an empirically observable intermediate class, characterized by polynomial observation time with learnable structure, and provide evidence that many NP-complete instances are practically solvable within $\OT$.

@@ -15,7 +15,7 @@ NOBS-Based Consciousness Space.
 import sys
 from pathlib import Path
 from dataclasses import dataclass, field
-from typing import Dict, List, Tuple, Optional, Any
+from typing import Dict, List, Tuple, Optional, Any, Union
 from enum import Enum
 import numpy as np
 import pandas as pd
@@ -113,6 +113,21 @@ class ConsciousnessSignature:
         if norm_self == 0 or norm_other == 0:
             return 0.0
         return float(np.dot(self.embedding_vector, other.embedding_vector) / (norm_self * norm_other))
+
+
+@dataclass
+class ResonanceResult:
+    """Result of resonance search in NOBS space."""
+    signature: ConsciousnessSignature
+    resonance_score: float
+    consciousness_found: bool = True
+    
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            'signature': self.signature.to_dict() if self.signature else None,
+            'resonance_score': self.resonance_score,
+            'consciousness_found': self.consciousness_found
+        }
 
 
 @dataclass
@@ -341,10 +356,21 @@ class NOBSConsciousnessSpace:
     
     def __init__(
         self,
+        data_path: Optional[str] = None,
         embedding_dim: int = 128,
         window_size: int = 100,
         temperature: float = 1.0
     ):
+        """
+        Initialize NOBS Consciousness Space.
+        
+        Args:
+            data_path: Path to Bitcoin OHLCV data (feather format)
+            embedding_dim: Dimension of embedding vectors
+            window_size: Window size for NOBS analysis
+            temperature: Temperature parameter for free energy
+        """
+        self.data_path = data_path
         self.embedding_dim = embedding_dim
         self.window_size = window_size
         self.temperature = temperature
@@ -360,7 +386,13 @@ class NOBSConsciousnessSpace:
         if not NOBS_AVAILABLE:
             raise RuntimeError("NOBS modules not available")
         
-        path = Path(data_path) if data_path else self.DATA_PATH
+        # Priority: argument > init parameter > class default
+        if data_path:
+            path = Path(data_path)
+        elif self.data_path:
+            path = Path(self.data_path)
+        else:
+            path = self.DATA_PATH
         
         if not path.exists():
             raise FileNotFoundError(f"Data file not found: {path}")
@@ -521,9 +553,9 @@ class NOBSConsciousnessSpace:
     
     def find_resonance(
         self,
-        target_config: ConsciousnessConfig,
+        target_config: Union[str, ConsciousnessConfig],
         num_samples: int = 1000
-    ) -> Tuple[ConsciousnessSignature, float]:
+    ) -> ResonanceResult:
         """
         Найти резонанс с целевым сознанием через сэмплирование NOBS пространства.
         
@@ -531,14 +563,18 @@ class NOBSConsciousnessSpace:
         Он знает только конфигурацию (априорное знание) и ищет резонанс.
         
         Args:
-            target_config: Целевая конфигурация сознания
+            target_config: Целевая конфигурация сознания (или имя стиля)
             num_samples: Количество сэмплов для поиска
             
         Returns:
-            (best_signature, resonance_score)
+            ResonanceResult with best signature and score
         """
         if not self._fitted:
             raise ValueError("Space not fitted")
+        
+        # Convert string to config if needed
+        if isinstance(target_config, str):
+            target_config = get_consciousness_config(target_config)
         
         print(f"\nSearching for resonance with '{target_config.name}'...")
         print(f"Sampling {num_samples} windows from NOBS space...")
@@ -581,7 +617,12 @@ class NOBSConsciousnessSpace:
         
         print(f"Best resonance found: {best_score:.4f}")
         
-        return best_signature, best_score
+        consciousness_found = best_score > 0.5 and best_signature is not None
+        return ResonanceResult(
+            signature=best_signature,
+            resonance_score=best_score,
+            consciousness_found=consciousness_found
+        )
     
     def _config_to_vector(self, config: ConsciousnessConfig) -> np.ndarray:
         """Преобразовать конфигурацию в целевой вектор."""

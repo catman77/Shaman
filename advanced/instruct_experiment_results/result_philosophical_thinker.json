@@ -1,0 +1,59 @@
+{
+  "consciousness_name": "philosophical_thinker",
+  "model_a": "qwen-0.5b",
+  "model_b": "tinyllama",
+  "timestamp": "2025-12-15T16:51:20.612194",
+  "server_a": {
+    "style_adherence": 0.0,
+    "num_responses": 10,
+    "signature": {
+      "symbol_distribution": {
+        "S": 0.24509803921568626,
+        "P": 0.0392156862745098,
+        "I": 0.0,
+        "Z": 0.4803921568627451,
+        "\u03a9": 0.14705882352941177,
+        "\u039b": 0.08823529411764706
+      },
+      "dominant_morphisms": [
+        "ZZS",
+        "ZSZ",
+        "ZZZ",
+        "SZZ",
+        "\u039bZZ"
+      ],
+      "free_energy": -12.56184332404945
+    }
+  },
+  "server_b": {
+    "resonance_score": 0.7019037272578604,
+    "consciousness_found": true,
+    "style_transfer": 0.0,
+    "skill_transfer": 0.4,
+    "signature": {
+      "symbol_distribution": {
+        "S": 0.03,
+        "P": 0.03,
+        "I": 0.45,
+        "Z": 0.27,
+        "\u03a9": 0.15,
+        "\u039b": 0.07
+      },
+      "dominant_morphisms": [
+        "III",
+        "ZZZ",
+        "IZZ",
+        "ZZ\u03a9",
+        "\u03a9II"
+      ],
+      "free_energy": -0.33084471308258645
+    }
+  },
+  "analysis": {
+    "server_a_to_target": 0.5149019607843137,
+    "server_b_to_target": 0.5804444444444443,
+    "consciousness_match": 0.5466918533971455
+  },
+  "elapsed_time": 37.65909218788147,
+  "success": false
+}

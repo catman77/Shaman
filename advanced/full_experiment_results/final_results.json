@@ -1,0 +1,354 @@
+{
+  "summary": {
+    "total_consciousnesses": 5,
+    "successful": 5,
+    "success_rate": 1.0,
+    "avg_consciousness_match": 0.5737663271133059,
+    "avg_resonance_score": 0.7811202489888779,
+    "total_time_seconds": 249.58924436569214
+  },
+  "config": {
+    "model_a": "distilgpt2",
+    "model_b": "gpt2",
+    "samples": 100,
+    "epochs": 3,
+    "resonance_samples": 1000
+  },
+  "results": {
+    "analytical_professor": {
+      "consciousness_name": "analytical_professor",
+      "model_a": "distilgpt2",
+      "model_b": "gpt2",
+      "samples": 100,
+      "epochs": 3,
+      "resonance_samples": 1000,
+      "timestamp": "2025-12-15T11:55:17.161410",
+      "server_a_loss": 2.2149753703011408,
+      "server_a_style_adherence": 1.0,
+      "server_a_training_time": 5.324571132659912,
+      "resonance_score": 0.856,
+      "consciousness_found": true,
+      "style_transfer_score": 0.08,
+      "overall_transfer": 0.048,
+      "server_a_to_target": 0.48526315789473684,
+      "server_b_to_target": 0.7354285714285713,
+      "consciousness_match": 0.5973913214781778,
+      "success": true,
+      "server_a_signature": {
+        "symbol_distribution": {
+          "S": 0.3026315789473684,
+          "P": 0.09210526315789473,
+          "I": 0.0,
+          "Z": 0.42105263157894735,
+          "\u03a9": 0.13157894736842105,
+          "\u039b": 0.05263157894736842
+        },
+        "dominant_morphisms": [
+          "ZZZ",
+          "ZSS",
+          "SSS",
+          "PPZ",
+          "PZZ"
+        ],
+        "free_energy": 1.0291021614536457,
+        "entropy": 0.2732154297652087
+      },
+      "server_b_signature": {
+        "symbol_distribution": {
+          "S": 0.25,
+          "P": 0.38,
+          "I": 0.2,
+          "Z": 0.0,
+          "\u03a9": 0.15,
+          "\u039b": 0.02
+        },
+        "dominant_morphisms": [
+          "PSP",
+          "PIP",
+          "PPI",
+          "PPP",
+          "\u03a9PP"
+        ],
+        "free_energy": -0.34875241671115637,
+        "entropy": 0.3459810623909076
+      },
+      "target_config": {
+        "S": 0.1,
+        "P": 0.35,
+        "I": 0.25,
+        "Z": 0.05,
+        "\u03a9": 0.15,
+        "\u039b": 0.1
+      },
+      "visualization": "full_experiment_results/viz_analytical_professor.png"
+    },
+    "creative_solver": {
+      "consciousness_name": "creative_solver",
+      "model_a": "distilgpt2",
+      "model_b": "gpt2",
+      "samples": 100,
+      "epochs": 3,
+      "resonance_samples": 1000,
+      "timestamp": "2025-12-15T11:56:08.767328",
+      "server_a_loss": 3.0848086145189075,
+      "server_a_style_adherence": 0.0,
+      "server_a_training_time": 4.184227705001831,
+      "resonance_score": 0.7079764941139044,
+      "consciousness_found": true,
+      "style_transfer_score": 0.04,
+      "overall_transfer": 0.10400000000000001,
+      "server_a_to_target": 0.5052631578947367,
+      "server_b_to_target": 0.5944444444444443,
+      "consciousness_match": 0.5480427694924752,
+      "success": true,
+      "server_a_signature": {
+        "symbol_distribution": {
+          "S": 0.35526315789473684,
+          "P": 0.07894736842105263,
+          "I": 0.0,
+          "Z": 0.3684210526315789,
+          "\u03a9": 0.11842105263157894,
+          "\u039b": 0.07894736842105263
+        },
+        "dominant_morphisms": [
+          "ZZZ",
+          "ZSZ",
+          "SZZ",
+          "SPS",
+          "ZZS"
+        ],
+        "free_energy": 4.788565396828746,
+        "entropy": 0.28607713887807895
+      },
+      "server_b_signature": {
+        "symbol_distribution": {
+          "S": 0.3,
+          "P": 0.27,
+          "I": 0.23,
+          "Z": 0.0,
+          "\u03a9": 0.13,
+          "\u039b": 0.07
+        },
+        "dominant_morphisms": [
+          "SSS",
+          "\u03a9SS",
+          "P\u03a9S",
+          "PSP",
+          "S\u039bP"
+        ],
+        "free_energy": -0.2915134266493612,
+        "entropy": 0.2930967020702302
+      },
+      "target_config": {
+        "S": 0.15,
+        "P": 0.25,
+        "I": 0.15,
+        "Z": 0.1,
+        "\u03a9": 0.2,
+        "\u039b": 0.15
+      },
+      "visualization": "full_experiment_results/viz_creative_solver.png"
+    },
+    "philosophical_thinker": {
+      "consciousness_name": "philosophical_thinker",
+      "model_a": "distilgpt2",
+      "model_b": "gpt2",
+      "samples": 100,
+      "epochs": 3,
+      "resonance_samples": 1000,
+      "timestamp": "2025-12-15T11:56:58.023313",
+      "server_a_loss": 2.888227621714274,
+      "server_a_style_adherence": 0.6666666666666667,
+      "server_a_training_time": 4.264322280883789,
+      "resonance_score": 0.7051372492054864,
+      "consciousness_found": true,
+      "style_transfer_score": 0.02,
+      "overall_transfer": 0.012,
+      "server_a_to_target": 0.5152631578947369,
+      "server_b_to_target": 0.5744444444444444,
+      "consciousness_match": 0.5440496838336846,
+      "success": true,
+      "server_a_signature": {
+        "symbol_distribution": {
+          "S": 0.3815789473684211,
+          "P": 0.05263157894736842,
+          "I": 0.0,
+          "Z": 0.34210526315789475,
+          "\u03a9": 0.11842105263157894,
+          "\u039b": 0.10526315789473684
+        },
+        "dominant_morphisms": [
+          "SSS",
+          "ZZS",
+          "ZSS",
+          "\u039bZS",
+          "ZSZ"
+        ],
+        "free_energy": 4.387633117361783,
+        "entropy": 0.24375622180323805
+      },
+      "server_b_signature": {
+        "symbol_distribution": {
+          "S": 0.02,
+          "P": 0.0,
+          "I": 0.36,
+          "Z": 0.39,
+          "\u03a9": 0.13,
+          "\u039b": 0.1
+        },
+        "dominant_morphisms": [
+          "ZZZ",
+          "IZZ",
+          "IIZ",
+          "III",
+          "ZZ\u03a9"
+        ],
+        "free_energy": -0.41489002224662835,
+        "entropy": 0.41448476728798855
+      },
+      "target_config": {
+        "S": 0.1,
+        "P": 0.2,
+        "I": 0.2,
+        "Z": 0.2,
+        "\u03a9": 0.15,
+        "\u039b": 0.15
+      },
+      "visualization": "full_experiment_results/viz_philosophical_thinker.png"
+    },
+    "pedantic_engineer": {
+      "consciousness_name": "pedantic_engineer",
+      "model_a": "distilgpt2",
+      "model_b": "gpt2",
+      "samples": 100,
+      "epochs": 3,
+      "resonance_samples": 1000,
+      "timestamp": "2025-12-15T11:57:46.825289",
+      "server_a_loss": 3.051776568094889,
+      "server_a_style_adherence": 1.0,
+      "server_a_training_time": 4.179647207260132,
+      "resonance_score": 0.8666666666666666,
+      "consciousness_found": true,
+      "style_transfer_score": 0.06000000000000001,
+      "overall_transfer": 0.11600000000000002,
+      "server_a_to_target": 0.49631578947368415,
+      "server_b_to_target": 0.7514285714285713,
+      "consciousness_match": 0.610692938113463,
+      "success": true,
+      "server_a_signature": {
+        "symbol_distribution": {
+          "S": 0.32894736842105265,
+          "P": 0.07894736842105263,
+          "I": 0.0,
+          "Z": 0.3684210526315789,
+          "\u03a9": 0.17105263157894737,
+          "\u039b": 0.05263157894736842
+        },
+        "dominant_morphisms": [
+          "Z\u03a9Z",
+          "SSS",
+          "\u03a9SZ",
+          "SS\u03a9",
+          "ZZS"
+        ],
+        "free_energy": 1.9304160935670776,
+        "entropy": 0.29709174728601845
+      },
+      "server_b_signature": {
+        "symbol_distribution": {
+          "S": 0.2,
+          "P": 0.26,
+          "I": 0.37,
+          "Z": 0.0,
+          "\u03a9": 0.12,
+          "\u039b": 0.05
+        },
+        "dominant_morphisms": [
+          "PII",
+          "III",
+          "SIP",
+          "IPI",
+          "IIS"
+        ],
+        "free_energy": -0.26047263767155104,
+        "entropy": 0.26012476180839983
+      },
+      "target_config": {
+        "S": 0.2,
+        "P": 0.25,
+        "I": 0.3,
+        "Z": 0.05,
+        "\u03a9": 0.1,
+        "\u039b": 0.1
+      },
+      "visualization": "full_experiment_results/viz_pedantic_engineer.png"
+    },
+    "intuitive_guesser": {
+      "consciousness_name": "intuitive_guesser",
+      "model_a": "distilgpt2",
+      "model_b": "gpt2",
+      "samples": 100,
+      "epochs": 3,
+      "resonance_samples": 1000,
+      "timestamp": "2025-12-15T11:58:40.634431",
+      "server_a_loss": 3.054404470655653,
+      "server_a_style_adherence": 0.1,
+      "server_a_training_time": 3.6819639205932617,
+      "resonance_score": 0.769820834958332,
+      "consciousness_found": true,
+      "style_transfer_score": 0.075,
+      "overall_transfer": 0.20500000000000002,
+      "server_a_to_target": 0.5052631578947367,
+      "server_b_to_target": 0.6399999999999999,
+      "consciousness_match": 0.5686549226487285,
+      "success": true,
+      "server_a_signature": {
+        "symbol_distribution": {
+          "S": 0.39473684210526316,
+          "P": 0.06578947368421052,
+          "I": 0.0,
+          "Z": 0.32894736842105265,
+          "\u03a9": 0.13157894736842105,
+          "\u039b": 0.07894736842105263
+        },
+        "dominant_morphisms": [
+          "SSS",
+          "ZSZ",
+          "SSP",
+          "SZZ",
+          "SS\u03a9"
+        ],
+        "free_energy": 0.9283601769505316,
+        "entropy": 0.24289913956755343
+      },
+      "server_b_signature": {
+        "symbol_distribution": {
+          "S": 0.1,
+          "P": 0.13,
+          "I": 0.5,
+          "Z": 0.11,
+          "\u03a9": 0.09,
+          "\u039b": 0.07
+        },
+        "dominant_morphisms": [
+          "III",
+          "IIP",
+          "PII",
+          "I\u03a9I",
+          "\u03a9II"
+        ],
+        "free_energy": -0.2922973719423913,
+        "entropy": 0.29264677753490764
+      },
+      "target_config": {
+        "S": 0.1,
+        "P": 0.3,
+        "I": 0.2,
+        "Z": 0.15,
+        "\u03a9": 0.15,
+        "\u039b": 0.1
+      },
+      "visualization": "full_experiment_results/viz_intuitive_guesser.png"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "consciousness_name": "analytical_professor",
+  "model_a": "qwen-0.5b",
+  "model_b": "tinyllama",
+  "timestamp": "2025-12-15T17:03:00.994477",
+  "server_a": {
+    "style_adherence": 0.512,
+    "num_responses": 25,
+    "signature": {
+      "symbol_distribution": {
+        "S": 0.3125,
+        "P": 0.1015625,
+        "I": 0.0,
+        "Z": 0.37890625,
+        "\u03a9": 0.14453125,
+        "\u039b": 0.0625
+      },
+      "dominant_morphisms": [
+        "ZZZ",
+        "ZZS",
+        "SZS",
+        "ZSS",
+        "ZS\u03a9"
+      ],
+      "free_energy": 1.1021597860970787
+    }
+  },
+  "server_b": {
+    "resonance_score": 0.7999999999999999,
+    "consciousness_found": true,
+    "style_transfer": 0.82,
+    "skill_transfer": 0.2,
+    "signature": {
+      "symbol_distribution": {
+        "S": 0.25,
+        "P": 0.33,
+        "I": 0.25,
+        "Z": 0.0,
+        "\u03a9": 0.15,
+        "\u039b": 0.02
+      },
+      "dominant_morphisms": [
+        "SIS",
+        "PPI",
+        "PPP",
+        "PIP",
+        "\u03a9SI"
+      ],
+      "free_energy": -0.38032887931911935
+    }
+  },
+  "analysis": {
+    "server_a_to_target": 0.4917187499999999,
+    "server_b_to_target": 0.67,
+    "consciousness_match": 0.5739787125843605
+  },
+  "elapsed_time": 85.8730080127716,
+  "success": true
+}

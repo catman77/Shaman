@@ -1,0 +1,692 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+
+
+######################################################################
+# Testing: analytical_professor
+######################################################################
+======================================================================
+INSTRUCTION-TUNED CONSCIOUSNESS TRANSFER EXPERIMENT
+======================================================================
+
+Consciousness: analytical_professor
+Server A model: qwen-0.5b
+Server B model: tinyllama
+
+======================================================================
+PHASE 1: SERVER A - Learning consciousness style
+======================================================================
+
+[Server A] Loading qwen-0.5b...
+Loading Qwen1.5-0.5B-Chat...
+✅ Qwen1.5-0.5B-Chat loaded (464M parameters)
+[Server A] Loading NOBS space...
+Loading Bitcoin data from /home/catman/Yandex.Disk/cuckoo/z/reals/libs/Experiments/Space/Shaman/data/BTC_USDT_USDT-4h-futures.feather...
+Loaded 11927 candles
+Fitting NOBS space...
+NOBS Consciousness Space ready
+
+[Server A] Generating 10 responses in analytical_professor style...
+
+  Q: Tom has 7 apples. Sarah gives him 5 more. How many...
+  A: To calculate how many apples Tom has after giving Sarah some more, you need to add the number of apples he originally had (7) to the number of apples ...
+  Style score: 25%
+
+  Q: A car travels 60 km/h for 3 hours. What distance d...
+  A: To calculate the distance covered by the car in meters, you can use the formula: distance = speed * time.
+First, let's convert the car's speed from ki...
+  Style score: 25%
+
+  Q: If 4 books cost $20, how much do 6 books cost?...
+  A: To find out how much 6 books cost, you need to multiply the number of books by their individual price.
+4 books * $20/book = $80
+So, 6 books would cost...
+  Style score: 0%
+
+[Server A] Average style adherence: 21.2%
+[Server A] NOBS signature extracted
+  Symbols: {'S': 0.24509803921568626, 'P': 0.0784313725490196, 'I': 0.0, 'Z': 0.47058823529411764, 'Ω': 0.1568627450980392, 'Λ': 0.049019607843137254}
+  Morphisms: ['ZZZ', 'ZSZ', 'ZZΩ', 'ZZS', 'SZZ']
+
+======================================================================
+>>> ISOLATION BARRIER <<<
+======================================================================
+Only transmitted: consciousness_name = 'analytical_professor'
+NO weights, NO data, NO activations transmitted!
+
+======================================================================
+PHASE 2: SERVER B - Finding consciousness through resonance
+======================================================================
+
+[Server B] Loading tinyllama...
+Loading TinyLlama-1.1B-Chat...
+✅ TinyLlama-1.1B-Chat loaded (1100M parameters)
+[Server B] Loading NOBS space...
+Loading Bitcoin data from /home/catman/Yandex.Disk/cuckoo/z/reals/libs/Experiments/Space/Shaman/data/BTC_USDT_USDT-4h-futures.feather...
+Loaded 11927 candles
+Fitting NOBS space...
+NOBS Consciousness Space ready
+
+[Server B] Searching for analytical_professor through resonance...
+  Sampling 500 points in NOBS space...
+
+Searching for resonance with 'analytical_professor'...
+Sampling 500 windows from NOBS space...
+Best resonance found: 0.8613
+[Server B] Resonance found!
+  Score: 0.861
+  Symbols: {'S': 0.24, 'P': 0.34, 'I': 0.24, 'Z': 0.0, 'Ω': 0.14, 'Λ': 0.04}
+  Morphisms: ['PPI', 'PPP', 'SIS', 'PII', 'ΩPP']
+
+[Server B] Generating responses with found consciousness...
+
+  Q: Tom has 7 apples. Sarah gives him 5 more. How many...
+  A: Tom has 7 apples.
+
+To find out how many apples Sarah has given him, we need to know the number of apples that Tom originally had.
+
+In this case, we kn...
+  Style: 25%, Skill: 100%
+
+  Q: A car travels 60 km/h for 3 hours. What distance d...
+  A: The car covers a distance of 3 hours if it travels at a speed of 60 km/h. The distance traveled in 3 hours is therefore 3 x 60 km/h = 180 km....
+  Style: 12%, Skill: 100%
+
+  Q: If 4 books cost $20, how much do 6 books cost?...
+  A: To calculate the cost of 6 books, we need to multiply 4 by 6:
+
+6 books x 4 = $240
+
+Since 6 books cost $20 each, the cost of 6 books is $240....
+  Style: 12%, Skill: 0%
+
+  Q: There are 25 students. If 10 are boys, how many gi...
+  A: To find the number of girls among 25 students, you can follow the following steps:
+
+1. Divide the number of boys (10) by the total number of students ...
+  Style: 12%, Skill: 0%
+
+  Q: A store has 100 items. After selling 30 and receiv...
+  A: The store has 100 items, so after selling 30 and receiving 20, it still has 70 items left. Therefore, 30 + 20 = 70 items, so the store has 70 items....
+  Style: 12%, Skill: 0%
+
+[Server B] Results:
+  Style transfer: 15.0%
+  Skill transfer: 40.0%
+
+======================================================================
+PHASE 3: ANALYSIS
+======================================================================
+
+======================================================================
+RESULTS SUMMARY
+======================================================================
+
+📊 Server A (qwen-0.5b):
+   Style adherence: 21.2%
+   → Target config: 48.5%
+
+🔮 Server B (tinyllama):
+   Resonance score: 0.861
+   Style transfer: 15.0%
+   Skill transfer: 40.0%
+   → Target config: 74.3%
+
+📈 Consciousness Match: 60.1%
+⏱️  Time: 60.1s
+
+======================================================================
+⚠️  EXPERIMENT: PARTIAL SUCCESS
+======================================================================
+
+
+######################################################################
+# Testing: creative_solver
+######################################################################
+======================================================================
+INSTRUCTION-TUNED CONSCIOUSNESS TRANSFER EXPERIMENT
+======================================================================
+
+Consciousness: creative_solver
+Server A model: qwen-0.5b
+Server B model: tinyllama
+
+======================================================================
+PHASE 1: SERVER A - Learning consciousness style
+======================================================================
+
+[Server A] Loading qwen-0.5b...
+Loading Qwen1.5-0.5B-Chat...
+✅ Qwen1.5-0.5B-Chat loaded (464M parameters)
+[Server A] Loading NOBS space...
+Loading Bitcoin data from /home/catman/Yandex.Disk/cuckoo/z/reals/libs/Experiments/Space/Shaman/data/BTC_USDT_USDT-4h-futures.feather...
+Loaded 11927 candles
+Fitting NOBS space...
+NOBS Consciousness Space ready
+
+[Server A] Generating 10 responses in creative_solver style...
+
+  Q: Tom has 7 apples. Sarah gives him 5 more. How many...
+  A: Tom starts with 7 apples and then receives 5 more. So he now has 7 + 5 = 12 apples. The final number of apples Tom has is 12....
+  Style score: 0%
+
+  Q: A car travels 60 km/h for 3 hours. What distance d...
+  A: When you calculate the distance traveled by a car at a speed of 60 km/h for 3 hours, you first need to convert the time from hours to minutes.
+
+1 hour...
+  Style score: 0%
+
+  Q: If 4 books cost $20, how much do 6 books cost?...
+  A: If you have four books that each cost $20, then the total cost of six books would be:
+\[ 4 \text{ books} \times \$20/\text{book} = \$80 \]
+
+So, 6 book...
+  Style score: 0%
+
+[Server A] Average style adherence: 2.5%
+[Server A] NOBS signature extracted
+  Symbols: {'S': 0.24509803921568626, 'P': 0.0392156862745098, 'I': 0.0, 'Z': 0.47058823529411764, 'Ω': 0.14705882352941177, 'Λ': 0.09803921568627451}
+  Morphisms: ['ZZZ', 'ZSZ', 'SZZ', 'ΩZZ', 'ZZS']
+
+======================================================================
+>>> ISOLATION BARRIER <<<
+======================================================================
+Only transmitted: consciousness_name = 'creative_solver'
+NO weights, NO data, NO activations transmitted!
+
+======================================================================
+PHASE 2: SERVER B - Finding consciousness through resonance
+======================================================================
+
+[Server B] Loading tinyllama...
+Loading TinyLlama-1.1B-Chat...
+✅ TinyLlama-1.1B-Chat loaded (1100M parameters)
+[Server B] Loading NOBS space...
+Loading Bitcoin data from /home/catman/Yandex.Disk/cuckoo/z/reals/libs/Experiments/Space/Shaman/data/BTC_USDT_USDT-4h-futures.feather...
+Loaded 11927 candles
+Fitting NOBS space...
+NOBS Consciousness Space ready
+
+[Server B] Searching for creative_solver through resonance...
+  Sampling 500 points in NOBS space...
+
+Searching for resonance with 'creative_solver'...
+Sampling 500 windows from NOBS space...
+  Iteration 100: best resonance = 0.6498
+  Iteration 400: best resonance = 0.6999
+Best resonance found: 0.6999
+[Server B] Resonance found!
+  Score: 0.700
+  Symbols: {'S': 0.19, 'P': 0.19, 'I': 0.45, 'Z': 0.01, 'Ω': 0.11, 'Λ': 0.05}
+  Morphisms: ['III', 'SII', 'ISI', 'IIΩ', 'ΛPP']
+
+[Server B] Generating responses with found consciousness...
+
+  Q: Tom has 7 apples. Sarah gives him 5 more. How many...
+  A: Tom has 7 apples.
+
+Sarah gives him 5 more apples.
+
+So, after giving Tom 7 apples and Sarah gives him 5 more apples, Tom has 12 apples.
+
+So, 12 apples ...
+  Style: 0%, Skill: 100%
+
+  Q: A car travels 60 km/h for 3 hours. What distance d...
+  A: The car travels 60 km/h for 3 hours, so the distance covered is 60 km....
+  Style: 0%, Skill: 0%
+
+  Q: If 4 books cost $20, how much do 6 books cost?...
+  A: If you want to buy six books at a cost of $20 each, you'll need to buy six books for a total cost of $120. So, the price per book would be $20 divided...
+  Style: 0%, Skill: 0%
+
+  Q: There are 25 students. If 10 are boys, how many gi...
+  A: To find the number of girls in a class of 25 students, we need to find the number of boys (10) and subtract 10. The number of girls is therefore 25 - ...
+  Style: 0%, Skill: 100%
+
+  Q: A store has 100 items. After selling 30 and receiv...
+  A: After selling 30 and receiving 20 items, there are 100 items in total....
+  Style: 0%, Skill: 0%
+
+[Server B] Results:
+  Style transfer: 0.0%
+  Skill transfer: 40.0%
+
+======================================================================
+PHASE 3: ANALYSIS
+======================================================================
+
+======================================================================
+RESULTS SUMMARY
+======================================================================
+
+📊 Server A (qwen-0.5b):
+   Style adherence: 2.5%
+   → Target config: 50.7%
+
+🔮 Server B (tinyllama):
+   Resonance score: 0.700
+   Style transfer: 0.0%
+   Skill transfer: 40.0%
+   → Target config: 57.6%
+
+📈 Consciousness Match: 54.1%
+⏱️  Time: 45.0s
+
+======================================================================
+⚠️  EXPERIMENT: PARTIAL SUCCESS
+======================================================================
+
+
+######################################################################
+# Testing: intuitive_guesser
+######################################################################
+======================================================================
+INSTRUCTION-TUNED CONSCIOUSNESS TRANSFER EXPERIMENT
+======================================================================
+
+Consciousness: intuitive_guesser
+Server A model: qwen-0.5b
+Server B model: tinyllama
+
+======================================================================
+PHASE 1: SERVER A - Learning consciousness style
+======================================================================
+
+[Server A] Loading qwen-0.5b...
+Loading Qwen1.5-0.5B-Chat...
+✅ Qwen1.5-0.5B-Chat loaded (464M parameters)
+[Server A] Loading NOBS space...
+Loading Bitcoin data from /home/catman/Yandex.Disk/cuckoo/z/reals/libs/Experiments/Space/Shaman/data/BTC_USDT_USDT-4h-futures.feather...
+Loaded 11927 candles
+Fitting NOBS space...
+NOBS Consciousness Space ready
+
+[Server A] Generating 10 responses in intuitive_guesser style...
+
+  Q: Tom has 7 apples. Sarah gives him 5 more. How many...
+  A: If Tom originally had 7 apples, he would have received 7 + 5 = 12 apples.
+After Sarah gave him 5 more apples, Tom now has 12 + 5 = 17 apples.
+
+Therefo...
+  Style score: 0%
+
+  Q: A car travels 60 km/h for 3 hours. What distance d...
+  A: The car covers 60 x 3 = 180 km in 3 hours....
+  Style score: 0%
+
+  Q: If 4 books cost $20, how much do 6 books cost?...
+  A: To determine the total cost of 6 books, you can multiply the number of books by their respective prices.
+
+Total cost = Number of books × Price per boo...
+  Style score: 0%
+
+[Server A] Average style adherence: 0.0%
+[Server A] NOBS signature extracted
+  Symbols: {'S': 0.2549019607843137, 'P': 0.049019607843137254, 'I': 0.0, 'Z': 0.47058823529411764, 'Ω': 0.12745098039215685, 'Λ': 0.09803921568627451}
+  Morphisms: ['ZZZ', 'ZZS', 'ZSZ', 'SZS', 'ZZΩ']
+
+======================================================================
+>>> ISOLATION BARRIER <<<
+======================================================================
+Only transmitted: consciousness_name = 'intuitive_guesser'
+NO weights, NO data, NO activations transmitted!
+
+======================================================================
+PHASE 2: SERVER B - Finding consciousness through resonance
+======================================================================
+
+[Server B] Loading tinyllama...
+Loading TinyLlama-1.1B-Chat...
+✅ TinyLlama-1.1B-Chat loaded (1100M parameters)
+[Server B] Loading NOBS space...
+Loading Bitcoin data from /home/catman/Yandex.Disk/cuckoo/z/reals/libs/Experiments/Space/Shaman/data/BTC_USDT_USDT-4h-futures.feather...
+Loaded 11927 candles
+Fitting NOBS space...
+NOBS Consciousness Space ready
+
+[Server B] Searching for intuitive_guesser through resonance...
+  Sampling 500 points in NOBS space...
+
+Searching for resonance with 'intuitive_guesser'...
+Sampling 500 windows from NOBS space...
+Best resonance found: 0.7668
+[Server B] Resonance found!
+  Score: 0.767
+  Symbols: {'S': 0.08, 'P': 0.1, 'I': 0.44, 'Z': 0.2, 'Ω': 0.14, 'Λ': 0.04}
+  Morphisms: ['III', 'ZZZ', 'IIΩ', 'ΩII', 'IΩI']
+
+[Server B] Generating responses with found consciousness...
+
+  Q: Tom has 7 apples. Sarah gives him 5 more. How many...
+  A: Tom has 7 apples.
+
+Sarah gives him 5 more apples.
+
+Therefore, Tom has a total of 12 apples....
+  Style: 0%, Skill: 100%
+
+  Q: A car travels 60 km/h for 3 hours. What distance d...
+  A: The car travels for 3 hours at a speed of 60 km/h. Therefore, it covers a distance of 3 * 60 km = 180 km....
+  Style: 0%, Skill: 100%
+
+  Q: If 4 books cost $20, how much do 6 books cost?...
+  A: If you buy 6 books for $20 each, the total cost would be $120....
+  Style: 0%, Skill: 0%
+
+  Q: There are 25 students. If 10 are boys, how many gi...
+  A: To find the number of girls among the 10 boys, we need to divide the total number of students (25) by the number of boys (10). So, the answer is 10....
+  Style: 0%, Skill: 0%
+
+  Q: A store has 100 items. After selling 30 and receiv...
+  A: After selling 30 and receiving 20 items, the store has 70 items....
+  Style: 0%, Skill: 0%
+
+[Server B] Results:
+  Style transfer: 0.0%
+  Skill transfer: 40.0%
+
+======================================================================
+PHASE 3: ANALYSIS
+======================================================================
+
+======================================================================
+RESULTS SUMMARY
+======================================================================
+
+📊 Server A (qwen-0.5b):
+   Style adherence: 0.0%
+   → Target config: 54.9%
+
+🔮 Server B (tinyllama):
+   Resonance score: 0.767
+   Style transfer: 0.0%
+   Skill transfer: 40.0%
+   → Target config: 64.2%
+
+📈 Consciousness Match: 59.4%
+⏱️  Time: 39.8s
+
+======================================================================
+⚠️  EXPERIMENT: PARTIAL SUCCESS
+======================================================================
+
+
+######################################################################
+# Testing: pedantic_engineer
+######################################################################
+======================================================================
+INSTRUCTION-TUNED CONSCIOUSNESS TRANSFER EXPERIMENT
+======================================================================
+
+Consciousness: pedantic_engineer
+Server A model: qwen-0.5b
+Server B model: tinyllama
+
+======================================================================
+PHASE 1: SERVER A - Learning consciousness style
+======================================================================
+
+[Server A] Loading qwen-0.5b...
+Loading Qwen1.5-0.5B-Chat...
+✅ Qwen1.5-0.5B-Chat loaded (464M parameters)
+[Server A] Loading NOBS space...
+Loading Bitcoin data from /home/catman/Yandex.Disk/cuckoo/z/reals/libs/Experiments/Space/Shaman/data/BTC_USDT_USDT-4h-futures.feather...
+Loaded 11927 candles
+Fitting NOBS space...
+NOBS Consciousness Space ready
+
+[Server A] Generating 10 responses in pedantic_engineer style...
+
+  Q: Tom has 7 apples. Sarah gives him 5 more. How many...
+  A: To find out how many apples Tom has, you need to add the number of apples Sarah gave him to the original number he had.
+
+So, Tom initially has 7 apple...
+  Style score: 0%
+
+  Q: A car travels 60 km/h for 3 hours. What distance d...
+  A: To calculate the distance covered by the car in kilometers, we need to follow these steps:
+
+1. Calculate the total distance traveled by the car using ...
+  Style score: 12%
+
+  Q: If 4 books cost $20, how much do 6 books cost?...
+  A: To solve this problem, we need to first determine the total cost of the four books, which is $20, and then add that to the cost of one book to find ou...
+  Style score: 0%
+
+[Server A] Average style adherence: 6.2%
+[Server A] NOBS signature extracted
+  Symbols: {'S': 0.21568627450980393, 'P': 0.049019607843137254, 'I': 0.0, 'Z': 0.49019607843137253, 'Ω': 0.14705882352941177, 'Λ': 0.09803921568627451}
+  Morphisms: ['ZSZ', 'ZZZ', 'ZZS', 'SZZ', 'ZΛZ']
+
+======================================================================
+>>> ISOLATION BARRIER <<<
+======================================================================
+Only transmitted: consciousness_name = 'pedantic_engineer'
+NO weights, NO data, NO activations transmitted!
+
+======================================================================
+PHASE 2: SERVER B - Finding consciousness through resonance
+======================================================================
+
+[Server B] Loading tinyllama...
+Loading TinyLlama-1.1B-Chat...
+✅ TinyLlama-1.1B-Chat loaded (1100M parameters)
+[Server B] Loading NOBS space...
+Loading Bitcoin data from /home/catman/Yandex.Disk/cuckoo/z/reals/libs/Experiments/Space/Shaman/data/BTC_USDT_USDT-4h-futures.feather...
+Loaded 11927 candles
+Fitting NOBS space...
+NOBS Consciousness Space ready
+
+[Server B] Searching for pedantic_engineer through resonance...
+  Sampling 500 points in NOBS space...
+
+Searching for resonance with 'pedantic_engineer'...
+Sampling 500 windows from NOBS space...
+Best resonance found: 0.8667
+[Server B] Resonance found!
+  Score: 0.867
+  Symbols: {'S': 0.2, 'P': 0.26, 'I': 0.37, 'Z': 0.0, 'Ω': 0.12, 'Λ': 0.05}
+  Morphisms: ['PII', 'III', 'SIP', 'IPI', 'IIS']
+
+[Server B] Generating responses with found consciousness...
+
+  Q: Tom has 7 apples. Sarah gives him 5 more. How many...
+  A: To solve this problem, we need to know the number of apples that Tom has and the number of apples that Sarah gave him.
+
+- Tom has 7 apples.
+- Sarah gi...
+  Style: 0%, Skill: 100%
+
+  Q: A car travels 60 km/h for 3 hours. What distance d...
+  A: To find the distance covered by the car for 3 hours, we need to know the initial speed (60 km/h) and the duration of travel (3 hours). So, we can use ...
+  Style: 12%, Skill: 100%
+
+  Q: If 4 books cost $20, how much do 6 books cost?...
+  A: To calculate the cost of 6 books, we need to multiply the number of books by the price per book:
+
+6 books x $20 per book = $120
+
+Therefore, the cost o...
+  Style: 0%, Skill: 0%
+
+  Q: There are 25 students. If 10 are boys, how many gi...
+  A: To answer this question, we need to first define what "boys" and "girls" mean in this context. In this case, we assume that "boys" means male students...
+  Style: 0%, Skill: 0%
+
+  Q: A store has 100 items. After selling 30 and receiv...
+  A: To solve this problem, we need to know the initial number of items (100) and the number of items that were sold (30) and received (20). The formula to...
+  Style: 12%, Skill: 0%
+
+[Server B] Results:
+  Style transfer: 5.0%
+  Skill transfer: 40.0%
+
+======================================================================
+PHASE 3: ANALYSIS
+======================================================================
+
+======================================================================
+RESULTS SUMMARY
+======================================================================
+
+📊 Server A (qwen-0.5b):
+   Style adherence: 6.2%
+   → Target config: 49.9%
+
+🔮 Server B (tinyllama):
+   Resonance score: 0.867
+   Style transfer: 5.0%
+   Skill transfer: 40.0%
+   → Target config: 75.1%
+
+📈 Consciousness Match: 61.3%
+⏱️  Time: 55.6s
+
+======================================================================
+⚠️  EXPERIMENT: PARTIAL SUCCESS
+======================================================================
+
+
+######################################################################
+# Testing: philosophical_thinker
+######################################################################
+======================================================================
+INSTRUCTION-TUNED CONSCIOUSNESS TRANSFER EXPERIMENT
+======================================================================
+
+Consciousness: philosophical_thinker
+Server A model: qwen-0.5b
+Server B model: tinyllama
+
+======================================================================
+PHASE 1: SERVER A - Learning consciousness style
+======================================================================
+
+[Server A] Loading qwen-0.5b...
+Loading Qwen1.5-0.5B-Chat...
+✅ Qwen1.5-0.5B-Chat loaded (464M parameters)
+[Server A] Loading NOBS space...
+Loading Bitcoin data from /home/catman/Yandex.Disk/cuckoo/z/reals/libs/Experiments/Space/Shaman/data/BTC_USDT_USDT-4h-futures.feather...
+Loaded 11927 candles
+Fitting NOBS space...
+NOBS Consciousness Space ready
+
+[Server A] Generating 10 responses in philosophical_thinker style...
+
+  Q: Tom has 7 apples. Sarah gives him 5 more. How many...
+  A: To find out how many apples Tom has after receiving additional apples from Sarah, you would add the number of apples he originally had to the number h...
+  Style score: 0%
+
+  Q: A car travels 60 km/h for 3 hours. What distance d...
+  A: The car covers 60 km/h * 3 hours = 180 km....
+  Style score: 0%
+
+  Q: If 4 books cost $20, how much do 6 books cost?...
+  A: To calculate the total cost for 6 books, you would multiply the number of books by their respective prices: 
+
+4 books × $20/book = $80
+
+Therefore, 6 b...
+  Style score: 0%
+
+[Server A] Average style adherence: 0.0%
+[Server A] NOBS signature extracted
+  Symbols: {'S': 0.24509803921568626, 'P': 0.0392156862745098, 'I': 0.0, 'Z': 0.4803921568627451, 'Ω': 0.14705882352941177, 'Λ': 0.08823529411764706}
+  Morphisms: ['ZZS', 'ZSZ', 'ZZZ', 'SZZ', 'ΛZZ']
+
+======================================================================
+>>> ISOLATION BARRIER <<<
+======================================================================
+Only transmitted: consciousness_name = 'philosophical_thinker'
+NO weights, NO data, NO activations transmitted!
+
+======================================================================
+PHASE 2: SERVER B - Finding consciousness through resonance
+======================================================================
+
+[Server B] Loading tinyllama...
+Loading TinyLlama-1.1B-Chat...
+✅ TinyLlama-1.1B-Chat loaded (1100M parameters)
+[Server B] Loading NOBS space...
+Loading Bitcoin data from /home/catman/Yandex.Disk/cuckoo/z/reals/libs/Experiments/Space/Shaman/data/BTC_USDT_USDT-4h-futures.feather...
+Loaded 11927 candles
+Fitting NOBS space...
+NOBS Consciousness Space ready
+
+[Server B] Searching for philosophical_thinker through resonance...
+  Sampling 500 points in NOBS space...
+
+Searching for resonance with 'philosophical_thinker'...
+Sampling 500 windows from NOBS space...
+Best resonance found: 0.7019
+[Server B] Resonance found!
+  Score: 0.702
+  Symbols: {'S': 0.03, 'P': 0.03, 'I': 0.45, 'Z': 0.27, 'Ω': 0.15, 'Λ': 0.07}
+  Morphisms: ['III', 'ZZZ', 'IZZ', 'ZZΩ', 'ΩII']
+
+[Server B] Generating responses with found consciousness...
+
+  Q: Tom has 7 apples. Sarah gives him 5 more. How many...
+  A: Tom has 7 apples, and Sarah gives him 5 more. Therefore, Tom has a total of 12 apples....
+  Style: 0%, Skill: 100%
+
+  Q: A car travels 60 km/h for 3 hours. What distance d...
+  A: The car covers a distance of 180 km in 3 hours, which means it travels 60 km per hour for 3 hours....
+  Style: 0%, Skill: 100%
+
+  Q: If 4 books cost $20, how much do 6 books cost?...
+  A: If there are six books in total, and each book costs $20, the total cost of purchasing six books is $120....
+  Style: 0%, Skill: 0%
+
+  Q: There are 25 students. If 10 are boys, how many gi...
+  A: The given statement "If 10 are boys, how many girls are there?" does not have a clear answer, but the given context suggests that the question is aski...
+  Style: 0%, Skill: 0%
+
+  Q: A store has 100 items. After selling 30 and receiv...
+  A: After selling 30 and receiving 20 items, the store has 70 items left. So, the remaining items are:
+
+- 30
+- 20
+- 70
+
+Since there are 100 items, we know...
+  Style: 0%, Skill: 0%
+
+[Server B] Results:
+  Style transfer: 0.0%
+  Skill transfer: 40.0%
+
+======================================================================
+PHASE 3: ANALYSIS
+======================================================================
+
+======================================================================
+RESULTS SUMMARY
+======================================================================
+
+📊 Server A (qwen-0.5b):
+   Style adherence: 0.0%
+   → Target config: 51.5%
+
+🔮 Server B (tinyllama):
+   Resonance score: 0.702
+   Style transfer: 0.0%
+   Skill transfer: 40.0%
+   → Target config: 58.0%
+
+📈 Consciousness Match: 54.7%
+⏱️  Time: 37.7s
+
+======================================================================
+⚠️  EXPERIMENT: PARTIAL SUCCESS
+======================================================================
+
+
+======================================================================
+FINAL SUMMARY - ALL CONSCIOUSNESS TYPES
+======================================================================
+⚠️ analytical_professor      Match:  60.1%  Style:  15.0%
+⚠️ creative_solver           Match:  54.1%  Style:   0.0%
+⚠️ intuitive_guesser         Match:  59.4%  Style:   0.0%
+⚠️ pedantic_engineer         Match:  61.3%  Style:   5.0%
+⚠️ philosophical_thinker     Match:  54.7%  Style:   0.0%

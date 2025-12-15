@@ -1,0 +1,59 @@
+{
+  "consciousness_name": "creative_solver",
+  "model_a": "qwen-0.5b",
+  "model_b": "tinyllama",
+  "timestamp": "2025-12-15T17:04:26.878954",
+  "server_a": {
+    "style_adherence": 0.04880000000000001,
+    "num_responses": 25,
+    "signature": {
+      "symbol_distribution": {
+        "S": 0.2890625,
+        "P": 0.08203125,
+        "I": 0.0,
+        "Z": 0.41015625,
+        "\u03a9": 0.16015625,
+        "\u039b": 0.05859375
+      },
+      "dominant_morphisms": [
+        "ZZZ",
+        "ZSZ",
+        "ZZS",
+        "SSZ",
+        "\u03a9ZZ"
+      ],
+      "free_energy": 9.245606141736415
+    }
+  },
+  "server_b": {
+    "resonance_score": 0.7075540749928118,
+    "consciousness_found": true,
+    "style_transfer": 0.44400000000000006,
+    "skill_transfer": 0.4,
+    "signature": {
+      "symbol_distribution": {
+        "S": 0.26,
+        "P": 0.25,
+        "I": 0.28,
+        "Z": 0.0,
+        "\u03a9": 0.14,
+        "\u039b": 0.07
+      },
+      "dominant_morphisms": [
+        "\u03a9SS",
+        "PSP",
+        "ISI",
+        "SIS",
+        "S\u039bP"
+      ],
+      "free_energy": -0.27017158344032316
+    }
+  },
+  "analysis": {
+    "server_a_to_target": 0.51015625,
+    "server_b_to_target": 0.5964444444444443,
+    "consciousness_match": 0.5516156824376107
+  },
+  "elapsed_time": 80.30853033065796,
+  "success": true
+}

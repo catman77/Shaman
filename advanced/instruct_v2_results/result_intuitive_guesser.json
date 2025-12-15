@@ -1,0 +1,59 @@
+{
+  "consciousness_name": "intuitive_guesser",
+  "model_a": "qwen-0.5b",
+  "model_b": "tinyllama",
+  "timestamp": "2025-12-15T17:05:47.198490",
+  "server_a": {
+    "style_adherence": 0.064,
+    "num_responses": 25,
+    "signature": {
+      "symbol_distribution": {
+        "S": 0.3125,
+        "P": 0.08203125,
+        "I": 0.0,
+        "Z": 0.41796875,
+        "\u03a9": 0.13671875,
+        "\u039b": 0.05078125
+      },
+      "dominant_morphisms": [
+        "ZZZ",
+        "SZZ",
+        "ZSZ",
+        "ZZS",
+        "SSS"
+      ],
+      "free_energy": 2.3574470115263195
+    }
+  },
+  "server_b": {
+    "resonance_score": 0.7675467153648675,
+    "consciousness_found": true,
+    "style_transfer": 0.48,
+    "skill_transfer": 0.0,
+    "signature": {
+      "symbol_distribution": {
+        "S": 0.07,
+        "P": 0.09,
+        "I": 0.52,
+        "Z": 0.15,
+        "\u03a9": 0.13,
+        "\u039b": 0.04
+      },
+      "dominant_morphisms": [
+        "III",
+        "II\u03a9",
+        "I\u03a9I",
+        "\u03a9II",
+        "ZZI"
+      ],
+      "free_energy": -0.29725713143439636
+    }
+  },
+  "analysis": {
+    "server_a_to_target": 0.50390625,
+    "server_b_to_target": 0.6359999999999999,
+    "consciousness_match": 0.5661133941181749
+  },
+  "elapsed_time": 74.1871554851532,
+  "success": true
+}

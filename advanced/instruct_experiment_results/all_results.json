@@ -1,0 +1,297 @@
+{
+  "analytical_professor": {
+    "consciousness_name": "analytical_professor",
+    "model_a": "qwen-0.5b",
+    "model_b": "tinyllama",
+    "timestamp": "2025-12-15T16:48:00.093118",
+    "server_a": {
+      "style_adherence": 0.2125,
+      "num_responses": 10,
+      "signature": {
+        "symbol_distribution": {
+          "S": 0.24509803921568626,
+          "P": 0.0784313725490196,
+          "I": 0.0,
+          "Z": 0.47058823529411764,
+          "\u03a9": 0.1568627450980392,
+          "\u039b": 0.049019607843137254
+        },
+        "dominant_morphisms": [
+          "ZZZ",
+          "ZSZ",
+          "ZZ\u03a9",
+          "ZZS",
+          "SZZ"
+        ],
+        "free_energy": -0.9177804497917202
+      }
+    },
+    "server_b": {
+      "resonance_score": 0.8613333333333334,
+      "consciousness_found": true,
+      "style_transfer": 0.15,
+      "skill_transfer": 0.4,
+      "signature": {
+        "symbol_distribution": {
+          "S": 0.24,
+          "P": 0.34,
+          "I": 0.24,
+          "Z": 0.0,
+          "\u03a9": 0.14,
+          "\u039b": 0.04
+        },
+        "dominant_morphisms": [
+          "PPI",
+          "PPP",
+          "SIS",
+          "PII",
+          "\u03a9PP"
+        ],
+        "free_energy": -0.34541239743838237
+      }
+    },
+    "analysis": {
+      "server_a_to_target": 0.4854901960784314,
+      "server_b_to_target": 0.7434285714285715,
+      "consciousness_match": 0.6007722388003338
+    },
+    "elapsed_time": 60.10697364807129,
+    "success": false
+  },
+  "creative_solver": {
+    "consciousness_name": "creative_solver",
+    "model_a": "qwen-0.5b",
+    "model_b": "tinyllama",
+    "timestamp": "2025-12-15T16:49:00.221677",
+    "server_a": {
+      "style_adherence": 0.025,
+      "num_responses": 10,
+      "signature": {
+        "symbol_distribution": {
+          "S": 0.24509803921568626,
+          "P": 0.0392156862745098,
+          "I": 0.0,
+          "Z": 0.47058823529411764,
+          "\u03a9": 0.14705882352941177,
+          "\u039b": 0.09803921568627451
+        },
+        "dominant_morphisms": [
+          "ZZZ",
+          "ZSZ",
+          "SZZ",
+          "\u03a9ZZ",
+          "ZZS"
+        ],
+        "free_energy": -0.11861245086176604
+      }
+    },
+    "server_b": {
+      "resonance_score": 0.6998921042834596,
+      "consciousness_found": true,
+      "style_transfer": 0.0,
+      "skill_transfer": 0.4,
+      "signature": {
+        "symbol_distribution": {
+          "S": 0.19,
+          "P": 0.19,
+          "I": 0.45,
+          "Z": 0.01,
+          "\u03a9": 0.11,
+          "\u039b": 0.05
+        },
+        "dominant_morphisms": [
+          "III",
+          "SII",
+          "ISI",
+          "II\u03a9",
+          "\u039bPP"
+        ],
+        "free_energy": -0.34093568552094
+      }
+    },
+    "analysis": {
+      "server_a_to_target": 0.5068627450980392,
+      "server_b_to_target": 0.5764444444444444,
+      "consciousness_match": 0.5405351177376223
+    },
+    "elapsed_time": 44.999560832977295,
+    "success": false
+  },
+  "intuitive_guesser": {
+    "consciousness_name": "intuitive_guesser",
+    "model_a": "qwen-0.5b",
+    "model_b": "tinyllama",
+    "timestamp": "2025-12-15T16:49:45.233766",
+    "server_a": {
+      "style_adherence": 0.0,
+      "num_responses": 10,
+      "signature": {
+        "symbol_distribution": {
+          "S": 0.2549019607843137,
+          "P": 0.049019607843137254,
+          "I": 0.0,
+          "Z": 0.47058823529411764,
+          "\u03a9": 0.12745098039215685,
+          "\u039b": 0.09803921568627451
+        },
+        "dominant_morphisms": [
+          "ZZZ",
+          "ZZS",
+          "ZSZ",
+          "SZS",
+          "ZZ\u03a9"
+        ],
+        "free_energy": 2.482339642605404
+      }
+    },
+    "server_b": {
+      "resonance_score": 0.766842722463971,
+      "consciousness_found": true,
+      "style_transfer": 0.0,
+      "skill_transfer": 0.4,
+      "signature": {
+        "symbol_distribution": {
+          "S": 0.08,
+          "P": 0.1,
+          "I": 0.44,
+          "Z": 0.2,
+          "\u03a9": 0.14,
+          "\u039b": 0.04
+        },
+        "dominant_morphisms": [
+          "III",
+          "ZZZ",
+          "II\u03a9",
+          "\u03a9II",
+          "I\u03a9I"
+        ],
+        "free_energy": -0.24357582184793558
+      }
+    },
+    "analysis": {
+      "server_a_to_target": 0.5493464052287582,
+      "server_b_to_target": 0.6419999999999999,
+      "consciousness_match": 0.5938690025223262
+    },
+    "elapsed_time": 39.789193630218506,
+    "success": false
+  },
+  "pedantic_engineer": {
+    "consciousness_name": "pedantic_engineer",
+    "model_a": "qwen-0.5b",
+    "model_b": "tinyllama",
+    "timestamp": "2025-12-15T16:50:25.038896",
+    "server_a": {
+      "style_adherence": 0.0625,
+      "num_responses": 10,
+      "signature": {
+        "symbol_distribution": {
+          "S": 0.21568627450980393,
+          "P": 0.049019607843137254,
+          "I": 0.0,
+          "Z": 0.49019607843137253,
+          "\u03a9": 0.14705882352941177,
+          "\u039b": 0.09803921568627451
+        },
+        "dominant_morphisms": [
+          "ZSZ",
+          "ZZZ",
+          "ZZS",
+          "SZZ",
+          "Z\u039bZ"
+        ],
+        "free_energy": 0.19119002015756983
+      }
+    },
+    "server_b": {
+      "resonance_score": 0.8666666666666666,
+      "consciousness_found": true,
+      "style_transfer": 0.05,
+      "skill_transfer": 0.4,
+      "signature": {
+        "symbol_distribution": {
+          "S": 0.2,
+          "P": 0.26,
+          "I": 0.37,
+          "Z": 0.0,
+          "\u03a9": 0.12,
+          "\u039b": 0.05
+        },
+        "dominant_morphisms": [
+          "PII",
+          "III",
+          "SIP",
+          "IPI",
+          "IIS"
+        ],
+        "free_energy": -0.26047263767155104
+      }
+    },
+    "analysis": {
+      "server_a_to_target": 0.49941176470588233,
+      "server_b_to_target": 0.7514285714285713,
+      "consciousness_match": 0.6125947019910987
+    },
+    "elapsed_time": 55.56324601173401,
+    "success": false
+  },
+  "philosophical_thinker": {
+    "consciousness_name": "philosophical_thinker",
+    "model_a": "qwen-0.5b",
+    "model_b": "tinyllama",
+    "timestamp": "2025-12-15T16:51:20.612194",
+    "server_a": {
+      "style_adherence": 0.0,
+      "num_responses": 10,
+      "signature": {
+        "symbol_distribution": {
+          "S": 0.24509803921568626,
+          "P": 0.0392156862745098,
+          "I": 0.0,
+          "Z": 0.4803921568627451,
+          "\u03a9": 0.14705882352941177,
+          "\u039b": 0.08823529411764706
+        },
+        "dominant_morphisms": [
+          "ZZS",
+          "ZSZ",
+          "ZZZ",
+          "SZZ",
+          "\u039bZZ"
+        ],
+        "free_energy": -12.56184332404945
+      }
+    },
+    "server_b": {
+      "resonance_score": 0.7019037272578604,
+      "consciousness_found": true,
+      "style_transfer": 0.0,
+      "skill_transfer": 0.4,
+      "signature": {
+        "symbol_distribution": {
+          "S": 0.03,
+          "P": 0.03,
+          "I": 0.45,
+          "Z": 0.27,
+          "\u03a9": 0.15,
+          "\u039b": 0.07
+        },
+        "dominant_morphisms": [
+          "III",
+          "ZZZ",
+          "IZZ",
+          "ZZ\u03a9",
+          "\u03a9II"
+        ],
+        "free_energy": -0.33084471308258645
+      }
+    },
+    "analysis": {
+      "server_a_to_target": 0.5149019607843137,
+      "server_b_to_target": 0.5804444444444443,
+      "consciousness_match": 0.5466918533971455
+    },
+    "elapsed_time": 37.65909218788147,
+    "success": false
+  }
+}

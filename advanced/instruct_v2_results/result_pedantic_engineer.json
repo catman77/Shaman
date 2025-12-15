@@ -1,0 +1,59 @@
+{
+  "consciousness_name": "pedantic_engineer",
+  "model_a": "qwen-0.5b",
+  "model_b": "tinyllama",
+  "timestamp": "2025-12-15T17:07:01.397188",
+  "server_a": {
+    "style_adherence": 0.592,
+    "num_responses": 25,
+    "signature": {
+      "symbol_distribution": {
+        "S": 0.3515625,
+        "P": 0.0625,
+        "I": 0.0,
+        "Z": 0.38671875,
+        "\u03a9": 0.13671875,
+        "\u039b": 0.0625
+      },
+      "dominant_morphisms": [
+        "ZSZ",
+        "SZS",
+        "SZZ",
+        "ZSS",
+        "SSZ"
+      ],
+      "free_energy": 2.5842906330509208
+    }
+  },
+  "server_b": {
+    "resonance_score": 0.8573333333333334,
+    "consciousness_found": true,
+    "style_transfer": 0.8800000000000001,
+    "skill_transfer": 0.2,
+    "signature": {
+      "symbol_distribution": {
+        "S": 0.21,
+        "P": 0.17,
+        "I": 0.43,
+        "Z": 0.0,
+        "\u03a9": 0.13,
+        "\u039b": 0.06
+      },
+      "dominant_morphisms": [
+        "III",
+        "IIS",
+        "IS\u03a9",
+        "PIS",
+        "IPI"
+      ],
+      "free_energy": -0.3281776042576282
+    }
+  },
+  "analysis": {
+    "server_a_to_target": 0.495,
+    "server_b_to_target": 0.7374285714285713,
+    "consciousness_match": 0.6041747618505285
+  },
+  "elapsed_time": 90.06018304824829,
+  "success": true
+}
